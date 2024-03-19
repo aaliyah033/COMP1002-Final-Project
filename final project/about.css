@@ -37,23 +37,23 @@ header {
     justify-content: space-between;
 }
 
-.dropdown-content {
+.dropdownfunction {
     display: none;
     position: absolute; 
     background-color: black;
-    min-width: 160px;
+    min-width: 60px;
     padding: 0;
 }
 
-.dropdown-content li {
+.dropdownfunction li {
     padding: 12px 10px;
 }
 
-.dropdown-content a {
+.dropdownfunction a {
     color: white;
     
 }
 
- .dropdown:hover .dropdown-content {
+ .dropdown:hover .dropdownfunction {
     display: block;
 } 
