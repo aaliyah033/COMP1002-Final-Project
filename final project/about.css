@@ -62,7 +62,9 @@ body {
             
     }
     
-    .sidebar, .information, .picture {
+    .sidebar,
+    .information,
+    .picture {
         flex: 1;
         padding: 20px;
         background-color: grey; 
