@@ -1,23 +1,33 @@
 /* Styles for the homepage */
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
-    min-height: auto;
+    background-color: #0E100E;
+    min-height: 100vh; 
+    margin: 0; 
+    color: #8A6C4D;
 }
 
 header {
-    width: 100vw;
-    display: flex; /*Arrange the header horizontally*/
+    display: flex; 
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
+    height: auto;
     padding: 0px;
     margin-right: 0px;
-    background-color: #897428b2;
+    background-color: #8A6C4D;
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.welcome {
+    text-align: center;
+    font-size: 7vh;
 }
 
 .logo img {
@@ -30,6 +40,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    margin-right: 20px;
 }
 
 
@@ -38,69 +49,119 @@ nav li {
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
-    color: #e0e0e0;
-    transition: color 0.3s; /* Smooth color transition on hover */
+    color: #222222;
+    transition: color 0.3s; 
 }
 
 
 nav li:hover {
-    color: #ffffff; /* Change color on hover */
+    color: #F7E7D7; 
 }
 
-main.phone-cards {
-    display: flex;  /*Arrange the phone cards horizontally*/
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 5px;
-    flex-wrap: wrap;
+main {
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-between;
 }
 
-.phone-card {
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and box-shadow */
+.productInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1em;
 }
 
-.phone-card:hover {
-    transform: scale(1.05); /* Enlarge on hover */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+
+.productPicture {
+    display: block;
+    width: 35vw;
+    height: auto;
+    padding: 1em;
 }
 
-.phone-card img {
-    width: 150px;
-    max-height: 220px;
-    border-radius: 8px;  /*Make the edges curved*/
-    margin-bottom: 15px;
-    object-fit: cover;
+.learnMore, .contactNow {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #0E100E;
+    background-color: #a48769;
+    border-radius: 0.8em;
+    padding:  0.6em 1em;
+    margin: auto;
 }
 
-button.order-button {
-    background-color: #766b07e1;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    margin: 20px;
-    transition: background-color 0.3s; /* Smooth background color transition on hover */
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    background-color: #8A6C4D;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-button.order-button:hover {
-    background-color: #e74c3c; /* Change background color on hover */
+.copyright {
+    color: #F7E7D7;
+    padding: 0.2em 1em;
 }
 
-@media (max-width: 400px) {
-    nav ul{
-        flex-direction: column;
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook, .instagram, .threads, .twitter {
+    padding: 1em 0.5em;
+}
+
+@media (max-width: 320px) {
+
+    body {
+        display: flex;
+        flex-flow: column wrap;
+        justify-items: center;
     }
-    main.phone-cards{
+
+    header {
+        width: 100vw;
+        display: flex; 
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        margin-right: 0px;
+        background-color: #8A6C4D;
+        color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
+    .footer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: #8A6C4D;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .copyright {
+        color: #F7E7D7;
+        padding: 0.2em 1em;
+        justify-content: center;
+    }
+    
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em 0.5em;
+    }
+    
 } 
