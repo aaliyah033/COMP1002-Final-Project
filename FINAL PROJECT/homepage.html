@@ -6,28 +6,12 @@
     <meta name="description" content="Welcome to Vintage Landlines!">
     <meta name="keywords" content="Old landline telephones">
     <title>Vintage Landline</title>
-    <link rel="stylesheet" href="home.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Set minimum height to cover the entire viewport */
-            margin: 0; /* Remove default margin */
-        }
-
-        main {
-            flex: 1; /* Allow the main content to grow and take up the available space */
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-            padding: 20px;
-        }
-    </style>    
+    <link rel="stylesheet" href="home.css">  
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="retro_phonelogo.png" alt="Phone Logo">
+            <img src="Images/retro_phonelogo.png" alt="Phone Logo">
         </div>
         <nav>
             <ul>
@@ -38,28 +22,55 @@
             </ul>
         </nav>
     </header>
-    <main class="phone-cards">
-        <div class="phone-card">
-            <img src="telephone1.jpg" alt="Gold telephone">
-            <h3>1890</h3>
-            <p>Gold color</p>
-            <span>$120.99</span>
-        </div>
-        <div class="phone-card">
-            <img src="telephone2.jpg" alt="Black telephone">
-            <h3>1910</h3>
-            <p>Black color</p>
-            <span>$140.99</span>
-        </div>
-        <div class="phone-card">
-            <img src="telephone3.png" alt="Wall telephone">
-            <h3>Wall telephone</h3>
-            <p>Black color</p>
-            <span>$160.99</span>
-        </div>
+
+    <h1 class="welcome">Welcome to Vintage Landlines!</h1>
+
+    <main class="pageBody">
+
+        <section class="productInformation">
+
+            <section  class="information">
+                <h2>Experience the Retro Charm</h2>
+                <p>Our Rotary Dial telephone combines nostalgia with modern functionality. Get ready to dial in style!</p>
+                <a class="learnMore" href="productpage.html">Learn More</a>
+            </section>
+
+            <section class="featureBox">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Classic Rotary Dial Design</li>
+                    <li>Available in Various Styles</li>
+                    <li>High-Quality Construction</li>
+                    <li>Compatible with Landline Connections</li>
+                    <li>Easy to Use</li>
+                    <li>Durable and Long-lasting</li>
+                </ul>
+            </section>
+
+            <section class="contactBox">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+                <a class="contactNow" href="contactpage.html">Contact Now</a>
+            </section>
+
+        </section>
+
+        <aside>
+            <img class="productPicture" src="Images/himanshu-ranpara-uXuXXHDgMdM-unsplash2.jpg" alt="Product Picture">
+        </aside>
+        
     </main>
-    <footer>
-        <button class="order-button" onclick="location.href='order_form.html'">Place Your Order Now</button>
+    
+    <footer class="footer">
+        <p class="copyright">&copy; 2024 Vintage Landlines. All rights reserved.</p>  <!--Here's some general idea of the footer. Might add more stuff-->
+        
+        <div class="socials">
+            <a href="https://www.facebook.com/"><img class="facebook" src="Icons/facebook-circle-line.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img class="instagram" src="Icons/instagram-line.png" alt="instagram"></a>
+            <a href="https://www.threads.net/login"><img class="threads" src="Icons/threads-line.png" alt="threads"></a>
+            <a href="https://twitter.com/"><img class="twitter" src="Icons/twitter-x-line.png" alt="twitter"></a>
+        </div>
     </footer>
+
 </body>
 </html>
