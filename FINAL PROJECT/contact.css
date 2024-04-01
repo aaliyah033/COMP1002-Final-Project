@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    min-height: auto;
+}
+
+/* header  */
+header {
+    width: 100vw;
+    display: flex; /*Arrange the header horizontally*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-right: 0px;
+    background-color:#8A6C4D;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin:0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+nav li {
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    color: #e0e0e0;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+
+nav li:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+
+.container {
+    max-width: 550px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #8A6C4D;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0 0 20px; /* Add bottom margin */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+    text-align: center; /* Center the labels */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #8A6C4D;
+}
+
+button {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #8A6C4D, #d7af87);
+    color: whitesmoke;
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center; /* Center the error message */
+}
+
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    background-color: #8A6C4D;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+    color: #F7E7D7;
+    padding: 0.2em 1em;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook, .instagram, .threads, .twitter {
+    padding: 1em 0.5em;
+}
+
+
+
