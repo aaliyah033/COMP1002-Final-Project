@@ -89,6 +89,30 @@ nav li:hover {
     margin-bottom: 40px;
  }
 
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #75642E;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+    color: #ffffff;
+    padding: 0.2em 1em;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook, .instagram, .threads, .twitter {
+    padding: 1em 0.5em;
+}
  
  @media screen and (max-width:1200px){
     .inner-container {
