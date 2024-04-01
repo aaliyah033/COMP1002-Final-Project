@@ -61,7 +61,7 @@ nav li:hover {
 
 /* middle  */
  .about-section {
-    background: url(15785.jpg) no-repeat left;
+    background: url("icon/aboutpic.jpg") no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
