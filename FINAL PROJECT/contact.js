@@ -6,8 +6,8 @@ function submitForm() {
     if (name === "" || email === "" || message === "") {
         document.getElementById("errorMessage").style.display = "block";
     } else {
-        // Code to submit the form (e.g., send data to backend)
-        alert("Form submitted successfully!");
-        // Here you can add AJAX request or any other logic to submit the form
+        // Code to submit the form 
+        alert("Form submitted successfully!"); // submit the form
+      
     }
 }
