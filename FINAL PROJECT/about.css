@@ -3,16 +3,11 @@
     padding: 0;
     font-family: "open sans" ,sans-serif;
     box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 700;
  }
 
- /* body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
- } */
- body {
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,9 +15,9 @@
     min-height: auto;
 }
 /* header  */
-header {
+/* header {
     width: 100vw;
-    display: flex; /*Arrange the header horizontally*/
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     padding: 0px;
@@ -44,65 +39,201 @@ nav ul {
     display: flex;
 }
 
-
 nav li {
     margin-right: 20px;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     color: #e0e0e0;
-    transition: color 0.3s; /* Smooth color transition on hover */
+    transition: color 0.3s; 
 }
-
 
 nav li:hover {
-    color: #ffffff; /* Change color on hover */
-}
+    color: #ffffff; 
+} */
 
-/* middle  */
- .about-section {
-    background: url("icon/aboutpic.jpg") no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
- }
 
- .inner-container {
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 150px;
- }
-
- .inner-container h1 {
-    margin-bottom: 30px;
+.aboutUs {
+    margin: 20px 50px;
     font-size: 30px;
     font-weight: 900;
- }
+    text-align: center;
+    color: rgb(35, 33, 33);
+}
 
- .text {
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
+.text1 {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(35, 33, 33);
+    line-height: 20px;
     text-align: justify;
-    margin-bottom: 40px;
- }
+    margin-bottom: 25px;
+    margin: 0 50px 25px 50px;
+    line-height: 32px;
+}
 
-.footer {
+.StoryMission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:  20px;
+    padding: 20px;
+}
+
+#story-container, #mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    border: none;
+    border-radius: 10px;
+    color: rgb(35, 33, 33);
+    background-color: #AB9C67;
+    padding-top: 20px;
+    margin: 20px;
+}
+
+#story-container h3, #mission-container h3 {
+    padding-bottom: 10px;
+}
+
+
+.story, .mission {
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 25px;
+    padding: 0 30px;
+    color: rgb(35, 33, 33);
+    line-height: 25px;
+
+}
+/* ______________________________________________________ */
+.heading2 {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.product-container {
+    background-color:rgb(35, 33, 33);
+    color: #AB9C67;
+    margin: 0;
+    padding: 20px;
+}
+
+.ProductInfo {
+    display: flex;
+    flex-direction: row;
+    margin:  20px;
+    justify-content: space-evenly;
+    
+}
+
+.rangeQuality {
+    font-size: 15px;
+    width: 80%;
+    line-height: 20px;
+    text-align: justify;
+    /* margin-bottom: 25px; */
+    padding: 20px 30px;
+}
+
+.range, .quality {
+    font-size: 15px;
+    width: 80%;
+    line-height: 20px;
+    text-align: justify;
+    margin: 25px;
+    padding: 20px 30px;
+    line-height: 32px;
+
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.productImage {
+    max-width: 30vw; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+/* ____________________________________________________________ */
+
+.TR {
+    background-color: #fafafa;
+}
+
+.heading3 {
+    margin: 30px 20px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.profileP {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Aaliyah, #Johan, #Nibras {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.teamMembers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(35, 33, 33);
+    background-color: #AB9C67;
+    padding: 20px;
+    margin: 20px 40px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.teamReviews {
+    display: flex;
+    flex-direction: column;
+    margin:  20px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+/* .footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    background-color: #75642E;
+    background-color: #AB9C67;
     padding: 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .copyright {
+    font-size: 20px;
+    font-weight: 500;
     color: #ffffff;
-    padding: 0.2em 1em;
+    padding: 16px;
 }
 
 .socials {
@@ -111,8 +242,8 @@ nav li:hover {
 }
 
 .facebook, .instagram, .threads, .twitter {
-    padding: 1em 0.5em;
-}
+    padding: 20px 15px;
+} */
  
  @media screen and (max-width:1200px){
     .inner-container {
