@@ -10,48 +10,10 @@ body {
     min-height: 100vh;
 }
 
-header {
-    width: 100vw;
-    height: auto;
-    display: flex; /*Arrange the header horizontally*/
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    margin-right: 0px;
-    background-color: #8A6C4D;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-.logo img {
-    max-width: 150px;
-    height: auto;
-    display: block;
-    margin:0 auto;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-
-nav li {
-    margin-right: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    color: #e0e0e0;
-    transition: color 0.3s; /* Smooth color transition on hover */
-}
-
-
-nav li:hover {
-    color: #ffffff; /* Change color on hover */
-}
 
 main {
-    flex: 1; /* Allow the main content to grow and take up the available space */
+    flex: 1; 
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -59,7 +21,7 @@ main {
 }
 
 main.phone-cards {
-    display: flex;  /*Arrange the phone cards horizontally*/
+    display: flex;  
     justify-content: space-around;
     align-items: flex-start;
     padding: 5px;
@@ -75,18 +37,18 @@ main.phone-cards {
     margin: 20px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and box-shadow */
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .phone-card:hover {
-    transform: scale(1.05); /* Enlarge on hover */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
 }
 
 .phone-card img {
     width: 150px;
     max-height: 220px;
-    border-radius: 8px;  /*Make the edges curved*/
+    border-radius: 8px;  
     margin-bottom: 15px;
     object-fit: cover;
 }
@@ -100,17 +62,15 @@ button.order-button {
     border: none;
     border-radius: 5px;
     margin: 20px;
-    transition: background-color 0.3s; /* Smooth background color transition on hover */
+    transition: background-color 0.3s;
 }
 
 button.order-button:hover {
-    background-color: #e74c3c; /* Change background color on hover */
+    background-color: #e74c3c; 
 }
 
 @media (max-width: 400px) {
-    nav ul{
-        flex-direction: column;
-    }
+    
     main.phone-cards{
         flex-direction: column;
     }
