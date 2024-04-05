@@ -6,62 +6,70 @@
     <meta name="description" content="Welcome to Vintage Landlines!">
     <meta name="keywords" content="Old landline telephones">
     <title>Vintage Landline</title>
-    <link rel="stylesheet" href="home.css">  
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/retro_phonelogo.png" alt="Phone Logo">
-        </div>
-        <nav>
-            <ul>
-               <li><a href="homepage.html">Home</a></li>
-                <li><a href="aboutpage.html">About</a></li>
-                <li><a href="productpage.html">Catalog</a></li>
-                <li><a href="contactpage.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <h1 class="welcome">Welcome to Vintage Landlines!</h1>
-
     <main class="pageBody">
-        <section class="productInformation">
-
+    <!-------------- Header Section --------------->
+        <header class="header">
+            <nav class="nav">
+                <a href="homepage.html"><img src="Icons/logo-transparent-png.png" alt="Phone Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <img class="close-button" src="Icons/close-line.png" onclick="hideMenu()" alt="hide-navbar">
+                    <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="aboutpage.html">ABOUT</a></li>
+                        <li><a href="productpage.html">PRODUCTS</a></li>
+                        <li><a href="contactpage.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <img class="menu-button" src="Icons/menu-line.png" onclick="showMenu()" alt="navbar-menu">
+            </nav>
             <section  class="information">
-                <h2>Experience the Retro Charm</h2>
-                <p>Our Rotary Dial telephone combines nostalgia with modern functionality. Get ready to dial in style!</p>
+                <h1 class="welcome">Welcome to Vintage Landlines!</h1>
+                <p>Experience the Retro Charm of our Rotary Dial telephones as it combines nostalgia with modern functionality. Get ready to dial in style!</p>
                 <a class="learnMore" href="productpage.html">Learn More</a>
             </section>
+        </header>   
+        <!-------------- Information Section --------------->
+        <section class="collection">
+            <h1>Explore Our Collection</h1>
+            <p>Browse through our range of rotary dial telephones, each with its own unique character and style. 
+            Whether you're looking to add a nostalgic touch to your home or office, RetroDial has the perfect device for you.<br><br>
+            Ready to take a trip down memory lane? Shop now and bring home your very own RetroDial telephone.
+            </p>
+            <a class="shopNow" href="productpage.html">Shop Now!</a>
 
-            <section class="featureBox">
-                <h2>Key Features</h2>
-                <ul>
-                    <li>Classic Rotary Dial Design</li>
-                    <li>Available in Various Styles</li>
-                    <li>High-Quality Construction</li>
-                    <li>Compatible with Landline Connections</li>
-                    <li>Easy to Use</li>
-                    <li>Durable and Long-lasting</li>
-                </ul>
+            <section class="row">
+                <div class="picture">
+                    <img class="telephonePicture" src="iloveimg-compressed/2782983_15744.jpg">
+                </div>
+                <div class="RetroDial">
+                    <h2>Why Choose RetroDial?</h2>
+                    <p>Experience the satisfying click-clack of the rotary dial as you dial your numbers.
+                        Each RetroDial telephone is a work of art, meticulously designed to capture the essence of bygone eras.
+                        Despite its vintage appearance, our rotary dial phones are equipped with modern features such as compatibility with landlines and VoIP systems.
+                    </p>    
+                </div>
+                <div class="key">
+                    <h2>Features</h2>
+                    <ul class="ul-style">
+                        <li>Classic Rotary Dial Design</li>
+                        <li>Available in Various Styles</li>
+                        <li>High-Quality Construction</li>
+                        <li>Compatible with Landline Connections</li>
+                        <li>Easy to Use</li>
+                        <li>Durable and Long-lasting</li>
+                    </ul>
+                </div>
             </section>
-
-            <section class="contactBox">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or inquiries, feel free to reach out to us.</p>
-                <a class="contactNow" href="contactpage.html">Contact Now</a>
-            </section>
-
         </section>
-
-        <figure>
-            <img class="productPicture" src="images/himanshu-ranpara-uXuXXHDgMdM-unsplash2.jpg" alt="Product Picture">
-        </figure>
     </main>
+
+    <script src="home.js"></script>
     
     <footer class="footer">
-        <p class="copyright">&copy; 2024 Vintage Landlines. All rights reserved.</p>  <!--Here's some general idea of the footer. Might add more stuff-->
-        
+        <p class="copyright">&copy; 2024 Vintage Landlines. All rights reserved.</p>
         <div class="socials">
             <div class="socials">
             <a href="https://www.facebook.com/"><img class="facebook" src="icon/facebook-circle-line.png" alt="facebook"></a>

@@ -1,6 +1,220 @@
-/* Styles for the homepage */
 
-body {
+* { 
+    margin: 0; 
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*---------------Header--------------*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(iloveimg-compressed/annie-spratt-xTaOPMa6wAE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 150px;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #AB9C67;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+} 
+.information {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.information h1 {
+    font-size: 62px;
+}
+.information p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.learnMore, .shopNow {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.learnMore:hover, .shopNow:hover {
+    border: 1px solid #AB9C67;
+    background: #AB9C67;
+    transition: 1s;
+}
+nav .close-button, .menu-button  {
+    display: none;
+}
+/*---------------Information--------------*/
+.collection {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.collection h1 {
+    font-weight: 600;
+    color: #232121;
+    font-size: 36px;
+}
+.collection p {
+    color: #232121;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.shopNow {
+    color: #232121;
+    border: 1px solid #232121;
+    margin-top: 15px;
+}
+.row {
+    margin-top: 0 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;    
+}
+.RetroDial, .key {
+    flex-basis: 31%;
+    background: #AB9C67;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.telephonePicture {
+    max-width: 31vw;
+    height: auto;
+}
+.row h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.ul-style {
+    margin-left: 20px;
+}
+.RetroDial:hover, .key:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+@media (max-width: 650px) {
+    /*---------------Header--------------*/
+    .information h1 {
+        font-size: 30px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #AB9C67;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .close-button, .menu-button {
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        max-width: 20px;
+        height: auto;
+    }
+    .nav-links ul {
+        padding: 20px;
+    }
+    /*---------------Information--------------*/
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .telephonePicture {
+        max-width: 71vw;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
@@ -164,4 +378,4 @@ main {
         padding: 1em 0.5em;
     }
     
-} 
+}  */
