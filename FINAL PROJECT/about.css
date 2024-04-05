@@ -1,58 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "open sans" ,sans-serif;
-    box-sizing: border-box;
     font-size: 30px;
-    font-weight: 700;
- }
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #fafafa;
-    min-height: auto;
-}
-/* header  */
-/* header {
-    width: 100vw;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    margin-right: 0px;
-    background-color: #897428b2;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-    max-width: 150px;
-    height: auto;
-    display: block;
-    margin:0 auto;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    color: #e0e0e0;
-    transition: color 0.3s; 
-}
-
-nav li:hover {
-    color: #ffffff; 
-} */
-
-
+/* --------ABOUT US----------- */
 .aboutUs {
     margin: 20px 50px;
     font-size: 30px;
@@ -60,7 +18,6 @@ nav li:hover {
     text-align: center;
     color: rgb(35, 33, 33);
 }
-
 .text1 {
     font-size: 15px;
     font-weight: 500;
@@ -71,7 +28,6 @@ nav li:hover {
     margin: 0 50px 25px 50px;
     line-height: 32px;
 }
-
 .StoryMission {
     display: flex;
     flex-direction: row;
@@ -80,12 +36,11 @@ nav li:hover {
     margin:  20px;
     padding: 20px;
 }
-
 #story-container, #mission-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vw;
+    max-width: 70%;
     border: none;
     border-radius: 10px;
     color: rgb(35, 33, 33);
@@ -93,36 +48,34 @@ nav li:hover {
     padding-top: 20px;
     margin: 20px;
 }
-
 #story-container h3, #mission-container h3 {
-    padding-bottom: 10px;
+    padding-top: 60px;
 }
-
-
 .story, .mission {
     font-size: 15px;
     text-align: justify;
     margin-bottom: 25px;
-    padding: 0 30px;
+    padding: 90px;
     color: rgb(35, 33, 33);
     line-height: 25px;
 
 }
-/* ______________________________________________________ */
+
+
+/* --------ABOUT OUR PRODUCT----------- */
+.product-container {
+    background-color:rgb(35, 33, 33);
+    max-width: 100vw;
+    color: #AB9C67;
+    margin: 0;
+    padding: 20px 0;
+}
 .heading2 {
     margin: 20px;
     font-size: 30px;
     font-weight: 900;
     text-align: center;
 }
-
-.product-container {
-    background-color:rgb(35, 33, 33);
-    color: #AB9C67;
-    margin: 0;
-    padding: 20px;
-}
-
 .ProductInfo {
     display: flex;
     flex-direction: row;
@@ -130,16 +83,14 @@ nav li:hover {
     justify-content: space-evenly;
     
 }
-
 .rangeQuality {
     font-size: 15px;
     width: 80%;
     line-height: 20px;
     text-align: justify;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
     padding: 20px 30px;
 }
-
 .range, .quality {
     font-size: 15px;
     width: 80%;
@@ -150,7 +101,11 @@ nav li:hover {
     line-height: 32px;
 
 }
-
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .image {
     display: flex;
     flex-direction: column;
@@ -158,17 +113,22 @@ nav li:hover {
     justify-content: center;
     margin-right: 50px;
 }
-
 .productImage {
     max-width: 30vw; 
     height: auto; 
     margin: 0 auto; 
 }
 
-/* ____________________________________________________________ */
+
+/* --------OUR TEAM----------- */
 
 .TR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fafafa;
+    margin: 50px;
 }
 
 .heading3 {
@@ -177,33 +137,52 @@ nav li:hover {
     font-weight: 900;
     text-align: center;
 }
-
-.profileP {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#Aaliyah, #Johan, #Nibras {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.profile-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px;
-}
-
-.teamMembers {
+.teamInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.profileP {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25%;
+}
+.profileA, .profileJ, .profileN {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* gap: 38%; */
+
+}
+#Aaliyah, #Johan, #Nibras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+.Aaliyah, .Johan, .Nibras {
+    text-align: center;
+}
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.teamMembers, .reviews {
     border-radius: 10px;
     color: rgb(35, 33, 33);
     background-color: #AB9C67;
-    padding: 20px;
-    margin: 20px 40px;
+    padding: 90px;
+    max-width: 45vw;
     font-size: 15px;
     line-height: 25px;
 }
@@ -211,11 +190,32 @@ nav li:hover {
 .teamReviews {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     margin:  20px;
     justify-content: space-evenly;
     align-items: center;
     
 }
+
+/* --------What People Say----------- */
+.heading4 {
+    margin: 30px 20px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+.imageContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+}
+.imageContainer img {
+    max-width: 100px;
+    height: 110px;
+    border-radius: 50%;
+}
+
 
 
 /* .footer {
@@ -244,19 +244,91 @@ nav li:hover {
 .facebook, .instagram, .threads, .twitter {
     padding: 20px 15px;
 } */
+
+
  
- @media screen and (max-width:1200px){
-    .inner-container {
-        padding: 80px;
+ @media screen and (max-width:960px){ 
+    /* --------ABOUT US----------- */
+    .StoryMission {
+        flex-direction: column;
+        align-items: center;
+    }
+    #story-container, #mission-container {
+        min-width:90vw;
+    }
+    #story-container h3, #mission-container h3 {
+        padding-top: 10px;
+    }
+    .story, .mission {
+        padding: 40px;
+    }
+    /* --------ABOUT OUR PRODUCT----------- */
+    .ProductInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align:center;
+        padding: 0;
+        margin: 0;
+    }
+    .rangeQuality {
+        padding: 0;
+    }
+    .range, .quality {
+        margin: 0;
+        padding: 0;
+        
+    }
+    .center-container {
+        align-items: center;
+    }
+    .productImage {
+        max-width: 60vw;
+    }
+    /* --------OUR Team----------- */
+    .TR {
+        justify-content: center;
+        align-items: center;
+    }
+    .teamMembers, .reviews {
+        max-width: 90vw;
+        padding: 40px;
+    }
+    .profile-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #Aaliyah, #Johan, #Nibras {
+        text-align: center;
+        align-items: center;
+    }
+    /* --------What People Say----------- */
+ }
+
+
+ 
+ @media screen and (max-width: 400px) {
+    /* --------OUR Team----------- */
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    #Aaliyah, #Johan, #Nibras {
+        align-items: center;
+        margin: 20px;
+    }
+    .teamMembers, .reviews {
+        min-width: 60vw;
+        padding: 40px;
+        text-align: justify;
     }
  }
 
- @media screen and (max-width:600px){ 
-    .about-section {
-        background-size: 100%;
-        padding: 0;
-    }
-    .inner-container {
-        padding: 60px;
+ @media screen and (max-width: 200px) {
+    
+    .teamMembers, .reviews {
+        text-align: justify;
     }
  }
