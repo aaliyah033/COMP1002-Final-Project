@@ -215,38 +215,6 @@ body {
     height: 110px;
     border-radius: 50%;
 }
-
-
-
-/* .footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    background-color: #AB9C67;
-    padding: 1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.copyright {
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
-    padding: 16px;
-}
-
-.socials {
-    display: flex;
-    flex-direction: row;
-}
-
-.facebook, .instagram, .threads, .twitter {
-    padding: 20px 15px;
-} */
-
-
- 
  @media screen and (max-width:960px){ 
     /* --------ABOUT US----------- */
     .StoryMission {
