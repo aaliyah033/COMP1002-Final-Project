@@ -5,32 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to Vintage Landlines!">
     <meta name="keywords" content="Old landline telephones">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Vintage Landline</title>
     <link rel="stylesheet" href="home.css">
+    <link href="header-footer.css" type="text/css" rel="stylesheet">
+    <script src="header-footer.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <main class="pageBody">
+    
     <!-------------- Header Section --------------->
-        <header class="header">
-            <nav class="nav">
-               <a href="homepage.html"><img src="Icons/logo-transparent-png.png" alt="Phone Logo"></a>
-                <div class="nav-links" id="navLinks">
-                   <img class="close-button" src="Icons/close-line.png" onclick="hideMenu()" alt="hide-navbar">
-                    <ul>
-                    <li><a href="homepage.html">HOME</a></li>
-                        <li><a href="aboutpage.html">ABOUT</a></li>
-                        <li><a href="productpage.html">PRODUCTS</a></li>
-                        <li><a href="contactpage.html">CONTACT</a></li>
-                    </ul>
-                </div>
-                <img class="menu-button" src="Icons/menu-line.png" onclick="showMenu()" alt="navbar-menu">
-            </nav>
-            <section  class="information">
-                <h1 class="welcome">Welcome to Vintage Landlines!</h1>
-                <p>Experience the Retro Charm of our Rotary Dial telephones as it combines nostalgia with modern functionality. Get ready to dial in style!</p>
-                <a class="learnMore" href="productpage.html">Learn More</a>
-            </section>
-        </header>   
+        
+        <header class="vintagehead"></header>
+
+        <main class="pageBody">
+         
         <!-------------- Information Section --------------->
         <section class="collection">
             <h1>Explore Our Collection</h1>
@@ -42,7 +30,7 @@
 
             <section class="row">
                 <div class="picture">
-                   <img class="telephonePicture" src="images /2782983_15744.jpg">
+                    <img class="telephonePicture" src="photos/2782983_15744.jpg">
                 </div>
                 <div class="RetroDial">
                     <h2>Why Choose RetroDial?</h2>
@@ -66,19 +54,12 @@
         </section>
     </main>
 
-    <script src="home.js"></script>
     
-    <footer class="footer">
-        <p class="copyright">&copy; 2024 Vintage Landlines. All rights reserved.</p>
-        <div class="socials">
-            <div class="socials">
-            <a href="https://www.facebook.com/"><img class="facebook" src="Icons/facebook-circle-line.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/"><img class="instagram" src="Icons/instagram-line.png" alt="instagram"></a>
-            <a href="https://www.threads.net/login"><img class="threads" src="Icons/threads-line.png" alt="threads"></a>
-            <a href="https://twitter.com/"><img class="twitter" src="Icons/twitter-x-line.png" alt="twitter"></a>
-        </div>
-        </div>
-    </footer>
+    
+    <footer class="vintagefooter"></footer>
+
+    <script src="home.js"></script>
+   
 
 </body>
 </html>
