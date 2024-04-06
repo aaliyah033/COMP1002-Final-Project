@@ -4,21 +4,24 @@ const footer = document.querySelector("header.vintagefooter");
 
 
 header.innerHTML = `
-<nav class="nav">
+            <nav class="nav">
                 <a href="homepage.html"><img src="photos/logo-transparent-png.png" alt="Phone Logo"></a>
                 <div class="nav-links" id="navLinks">
                     <img class="close-button" src="photos/close-line.png" onclick="hideMenu()" alt="hide-navbar">
                     <ul>
-                    <li><a href="homepage.html">HOME</a></li>
-                        <li><a href="aboutpage.html">ABOUT</a></li>
-                        <li><a href="productpage.html">PRODUCTS</a></li>
-                        <li><a href="contactpage.html">CONTACT</a></li>
+                      <li><a href="homepage.html">HOME</a></li>
+                      <li><a href="aboutpage.html">ABOUT</a></li>
+                      <li><a href="productpage.html">PRODUCTS</a></li>
+                      <li><a href="contactpage.html">CONTACT</a></li>
                     </ul>
                 </div>
                 <img class="menu-button" src="photos/menu-line.png" onclick="showMenu()" alt="navbar-menu">
             </nav>
-            
-
+            <section  class="information">
+              <h1 class="welcome">Welcome to Vintage Landlines!</h1>
+              <p>Experience the Retro Charm of our Rotary Dial telephones as it combines nostalgia with modern functionality. Get ready to dial in style!</p>
+              <a class="learnMore" href="productpage.html">Learn More</a>
+            </section>
 ` ;
 
 footer.innerHTML = `

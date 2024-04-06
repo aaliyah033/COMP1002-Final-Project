@@ -4,7 +4,24 @@
     padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* .information {
+    max-width: 100vw;
+    height: auto;
+    color: #fff;
+    box-shadow: 0px  4px 20px -4px rgba(0,0,0,.75);
+    text-align: center;
+    background-color: #201D1E;
+    padding: 50px 20px;
+}
+.information h1 {
+    font-size: 62px;
+    margin-top: 10vh;
+}
+.information p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+} */
 .learnMore, .shopNow {
     display: inline-block;
     text-decoration: none;
@@ -22,7 +39,6 @@
     background: #AB9C67;
     transition: 1s;
 }
-
 /*---------------Information--------------*/
 .collection {
     width: 80%;
@@ -61,6 +77,9 @@
     padding: 20px;
     box-sizing: border-box;
     text-align: justify;
+}
+.RetroDial {
+    flex-grow: 2;
 }
 .telephonePicture {
     max-width: 31vw;
@@ -107,7 +126,7 @@
 
 
 
-@media (max-width: 650px) {
+@media (max-width: 960px) {
     
     .row {
         flex-direction: column;
@@ -116,9 +135,7 @@
     .telephonePicture {
         max-width: 71vw;
         height: auto;
-    
     }
-
     /* footer */
     .footer {
         display: flex;
