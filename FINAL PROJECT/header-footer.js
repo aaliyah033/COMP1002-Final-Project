@@ -1,6 +1,14 @@
 const header = document.querySelector("header.vintagehead");
 const footer = document.querySelector("header.vintagefooter");
 
+// Get the footer company name element
+const footerCompanyName = document.querySelector(".footer-company-name");
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Update the content of the element with the current year
+footerCompanyName.textContent = `Telecomm © ${currentYear}`;
 
 
 header.innerHTML = `
