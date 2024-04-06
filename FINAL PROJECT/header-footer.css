@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 /* -------------- Header Section --------------- */
 .header {
     max-height: 60vh;
@@ -85,27 +86,9 @@ nav .close-button, .menu-button  {
     text-align: center;
     background: #ddd;
 }
-#footer-partners {
-    width: 100%;
-    display: flex;
-    background:  #A38657;    /* #333; */
-    height: 16vh;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: none;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  @media screen and (max-width: 400px) {
-      #footer-partners{   
-        flex-direction: column;
-      }
-    }
-  
+
   .footer-distributed{
-    background: #AFE1AF;
+    background:#201D1E;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -136,7 +119,7 @@ nav .close-button, .menu-button  {
   }
   
   .footer-distributed h3 span{
-    color:  lightseagreen;
+    color:  #75642E;
   }
   
   /* Footer links */
@@ -188,7 +171,7 @@ nav .close-button, .menu-button  {
   
   .footer-distributed .footer-center p{
     display: inline-block;
-    color: lightseagreen;
+    color:#989473;
     font-weight:400;
     vertical-align: middle;
     margin:0;
@@ -202,7 +185,7 @@ nav .close-button, .menu-button  {
   }
   
   .footer-distributed .footer-center p a{
-    color:  lightseagreen;
+    color:#989473;
     text-decoration: none;;
   }
   
@@ -211,7 +194,7 @@ nav .close-button, .menu-button  {
     font-weight:300;
     font-size: 20px;
     left: 0;
-    color: #1abc9c;
+    color: #75642E;
     display: inline-block;
     padding-right: 5px;
   }
@@ -228,7 +211,7 @@ nav .close-button, .menu-button  {
   
   .footer-distributed .footer-company-about{
     line-height: 20px;
-    color:  #92999f;
+    color: #989473;
     font-size: 13px;
     font-weight: normal;
     margin: 0;
@@ -236,7 +219,7 @@ nav .close-button, .menu-button  {
   
   .footer-distributed .footer-company-about span{
     display: block;
-    color:  #ffffff;
+    color: whitesmoke;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -257,7 +240,7 @@ nav .close-button, .menu-button  {
     border-radius: 2px;
   
     font-size: 20px;
-    color: #ffffff;
+    color: #989473;
     text-align: center;
     line-height: 35px;
   
@@ -284,6 +267,7 @@ nav .close-button, .menu-button  {
   
     .footer-distributed .footer-center i{
       margin-left: 0;
+      justify-content: left;
     }
   
   }
@@ -297,26 +281,27 @@ nav .close-button, .menu-button  {
   }
   
   .fa:hover {
-      opacity: 0.7;
+      
+      background-color:#AB9C67;
   }
   
   #fa-facebook {
-      background: #3B5998 !important;
+      
       color: white !important;
   }
   
   .fa-twitter {
-      background: #55ACEE !important;
+      
       color: white !important;
   }
   
   .fa-linkedin {
-      background: #007bb5 !important;
+     
       color: white !important;
   }
   
   .fa-github {
-      background: lightseagreen !important;
+      
       color: white !important;
   }
 
