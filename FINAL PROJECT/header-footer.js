@@ -23,50 +23,44 @@ header.innerHTML = `
               <a class="learnMore" href="productpage.html">Learn More</a>
             </section>
 ` ;
-
 const footerSection = document.getElementById("vintagefooter");
-footerSection.innerHTML =  `
-<section id="footer-partners">
-  <div>Our Partners</div> <div>item 02</div> <div>item 03</div>
-</section>
+footerSection.innerHTML = `
+    <!-- Your footer HTML content here -->
+
 <footer class="footer-distributed">
 
       <div class="footer-left">
 
-        <h3>Company<span>logo</span></h3>
+        <h3>Telecomm<span>logo</span></h3>
 
         <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
-          
-          <a href="#">Blog</a>
+          <a href="homepage.html" class="link-1">Home</a>
         
-          <a href="#">Pricing</a>
+          <a href="productpage.html">Pricing</a>
         
-          <a href="#">About</a>
+          <a href="aboutpage.html">About</a>
           
-          <a href="#">Faq</a>
-          
-          <a href="#">Contact</a>
+          <a href="contactpage.html">Contact</a>
         </p>
 
-        <p class="footer-company-name">Company Name © 2015</p>
+        <p class="footer-company-name">Telecomm © 2024</p>
       </div>
 
       <div class="footer-center">
 
         <div>
           <i class="fa fa-map-marker"></i>
-          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+          <p><span>1 Georgian Dr, Barrie, ON L4M 3X9</p>
         </div>
 
         <div>
           <i class="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+          <p>+1.123.456.789</p>
         </div>
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">support@company.com</a></p>
+          <p><a href="mailto:support@company.com">support@telecomm.com</a></p>
         </div>
 
       </div>
@@ -75,7 +69,8 @@ footerSection.innerHTML =  `
 
         <p class="footer-company-about">
           <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+          Telecomm where nostalgia meets innovation in the world of retro telephones.
+          
         </p>
 
         <div class="footer-icons">
@@ -91,10 +86,5 @@ footerSection.innerHTML =  `
 
     </footer>
 `;
-
-
-
-
-
 
 
