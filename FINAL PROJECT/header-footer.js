@@ -24,7 +24,8 @@ header.innerHTML = `
             </section>
 ` ;
 
-footer.innerHTML = `
+const footerSection = document.getElementById("vintagefooter");
+footerSection.innerHTML =  `
 <section id="footer-partners">
   <div>Our Partners</div> <div>item 02</div> <div>item 03</div>
 </section>
