@@ -41,7 +41,7 @@ footerSection.innerHTML = `
           <a href="contactpage.html">Contact</a>
         </p>
 
-        <p class="footer-company-name">Telecomm © 2024</p>
+        <p class="footer-company-name"></p>
       </div>
 
       <div class="footer-center">
@@ -84,5 +84,14 @@ footerSection.innerHTML = `
 
     </footer>
 `;
+
+// Get the footer company name element
+const footerCompanyName = document.querySelector(".footer-company-name");
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Update the content of the element with the current year
+footerCompanyName.textContent = `Telecomm © ${currentYear}`;
 
 
