@@ -1,5 +1,3 @@
-/* Styles for the homepage */
-
 body {
     display: flex;
     flex-direction: column;
@@ -9,8 +7,6 @@ body {
     background-color: #fafafa;
     min-height: 100vh;
 }
-
-
 
 main {
     flex: 1; 
@@ -29,6 +25,7 @@ main.phone-cards {
 }
 
 .phone-card {
+    position: relative; /* Add this line */
     width: 340px;
     height: 350px;
     background-color: white;
@@ -70,8 +67,47 @@ button.order-button:hover {
 }
 
 @media (max-width: 400px) {
-    
     main.phone-cards{
         flex-direction: column;
     }
-} 
+}
+
+/* New styles for color options */
+.color-options {
+    display: none;
+    position: absolute;
+    bottom: 10px; /* Adjust this value to fit your design */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.phone-card:hover .color-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-option {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.color-option:hover {
+    background-color: #dddddd;
+}
+
+.black {
+    color: black;
+}
+
+.gold {
+    color: gold;
+}
+
+.white {
+    color: rgba(0, 0, 0, 0.415);
+}
