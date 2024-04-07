@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -110,4 +111,8 @@ button.order-button:hover {
 
 .white {
     color: rgba(0, 0, 0, 0.415);
+}
+
+.brown {
+    color:#ea87247e
 }
