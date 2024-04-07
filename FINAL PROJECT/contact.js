@@ -1,6 +1,6 @@
 
 // Function to check the contact form
-function validateContactForm() {
+function contactformcheck() {
    
     var name = document.getElementById('name').value; // Gets the value of the name 
     var email = document.getElementById('email').value; // Gets the value of the email 
