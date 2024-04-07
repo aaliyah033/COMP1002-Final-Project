@@ -112,15 +112,13 @@ nav .close-button, .menu-button  {
   
   /* The company logo */
   
-  .footer-distributed h3{
+   .footer-distributed h3{
     color:  #ffffff;
     font: normal 36px 'Open Sans', cursive;
     margin: 0;
-  }
-  
-  .footer-distributed h3 span{
-    color:  #75642E;
-  }
+    font-weight: bold;
+    
+  } 
   
   /* Footer links */
   
