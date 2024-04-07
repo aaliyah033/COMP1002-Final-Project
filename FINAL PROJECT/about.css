@@ -1,378 +1,386 @@
+/* Global reset */
 * {
-    margin: 0;
-    padding: 0;
-    /* font-size: 30px; */
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-body {
-    background-color: #fafafa;
+    margin: 0; /* Resetting margin to 0 */
+    padding: 0; /* Resetting padding to 0 */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Setting font family */
 }
 
+body {
+    background-color: #fafafa; /* Setting background color for the body */
+}
 
 /* --------ABOUT US----------- */
 .aboutUs {
-    margin: 20px 50px;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
-    color: #232121;
+    margin: 90px 50px 20px 50px; /* Setting margin: top to 90px, bottom 20px, left and right 50px */
+    font-size: 30px; /* Setting font size */
+    font-weight: 900; /* Setting font weight */
+    text-align: center; /* Center aligning text */
+    color: #232121; /* Setting text color */
 }
+
 .text1 {
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(35, 33, 33);
-    line-height: 20px;
-    text-align: left;
-    margin: 0 150px 25px 150px;
-    line-height: 32px;
+    font-size: 16px; /* Setting font size */
+    font-weight: 500; /* Setting font weight */
+    color: rgb(35, 33, 33); /* Setting text color */
+    line-height: 20px; /* Setting line height */
+    text-align: left; /* Left aligning text */
+    margin: 0 150px 25px 150px; /* Setting margin: top 0, right 150px, bottom 25px, left 150px */
+    line-height: 32px; /* Setting line height */
 }
+
 .StoryMission {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin:  20px;
-    padding: 20px;
+    display: flex; /* Setting display property to flex */
+    flex-direction: row; /* Setting flex direction */
+    justify-content: space-between; /* Distributing space between items */
+    align-items: flex-start; /* Aligning items to the start */
+    margin: 20px; /* Setting margin */
+    padding: 20px; /* Setting padding */
 }
+
 #story-container, #mission-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 70%;
-    border: none;
-    border-radius: 10px;
-    color: rgb(35, 33, 33);
-    background-color: #AB9C67;
-    padding-top: 20px;
-    margin: 20px;
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction to column */
+    align-items: center; /* Aligning items to the center */
+    max-width: 70%; /* Setting maximum width */
+    border: none; /* Removing border */
+    border-radius: 10px; /* Setting border radius */
+    color: rgb(35, 33, 33); /* Setting text color */
+    background-color: #AB9C67; /* Setting background color */
+    padding-top: 20px; /* Setting padding */
+    margin: 20px; /* Setting margin */
 }
+
 #story-container h3, #mission-container h3 {
-    padding: 60px 60px 0 60px;
+    padding: 60px 60px 0 60px; /* Setting padding */
 }
+
 .story, .mission {
-    font-size: 16px;
-    text-align: left;
-    margin-bottom: 25px;
-    padding: 20px 90px 90px  90px;
-    color: rgb(35, 33, 33);
-    line-height: 25px;
-
+    font-size: 16px; /* Setting font size */
+    text-align: left; /* Left aligning text */
+    margin-bottom: 25px; /* Setting margin bottom */
+    padding: 20px 90px 90px 90px; /* Setting padding */
+    color: rgb(35, 33, 33); /* Setting text color */
+    line-height: 25px; /* Setting line height */
 }
-
 
 /* --------ABOUT OUR PRODUCT----------- */
 .product-container {
-    background-color:rgb(35, 33, 33);
-    max-width: 100vw;
-    color: #AB9C67;
-    margin: 0;
-    padding: 20px 0;
+    background-color: rgb(35, 33, 33); /* Setting background color */
+    max-width: 100vw; /* Setting maximum width */
+    color: #AB9C67; /* Setting text color */
+    margin: 0; /* Resetting margin */
+    padding: 20px 0; /* Setting padding */
 }
-.heading2 {
-    margin: 20px 0 0 60px;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: left;
-}
-.ProductInfo {
-    display: flex;
-    flex-direction: row;
-    margin:  20px;
-    justify-content: space-evenly;
-    
-}
-.rangeQuality {
-    font-size: 16px;
-    width: 80%;
-    line-height: 20px;
-    text-align: justify;
-    margin-bottom: 25px;
-    padding: 20px 30px;
-}
-.range, .quality {
-    font-size: 16px;
-    width: 80%;
-    line-height: 20px;
-    text-align: left;
-    margin: 10px;
-    line-height: 32px;
 
+.heading2 {
+    margin: 20px 0 0 150px; /* Setting margin: top 20px, right 0, bottom 0, left 150px */
+    font-size: 30px; /* Setting font size */
+    font-weight: 900; /* Setting font weight */
+    text-align: left; /* Left aligning text */
 }
+
+.ProductInfo {
+    display: flex; /* Setting display property to flex */
+    flex-direction: row; /* Setting flex direction */
+    margin: 20px; /* Setting margin */
+    justify-content: space-evenly; /* Distributing space evenly */
+}
+
+.rangeQuality {
+    font-size: 16px; /* Setting font size */
+    width: 80%; /* Setting width */
+    line-height: 20px; /* Setting line height */
+    text-align: justify; /* Justifying text */
+    margin-bottom: 25px; /* Setting margin bottom */
+    padding: 20px 0 0 120px; /* Setting padding */
+}
+
+.range, .quality {
+    font-size: 16px; /* Setting font size */
+    width: 80%; /* Setting width */
+    line-height: 20px; /* Setting line height */
+    text-align: left; /* Left aligning text */
+    margin: 10px; /* Setting margin */
+    line-height: 32px; /* Setting line height */
+}
+
 .center-container {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
 }
+
 .image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
+    align-items: center; /* Aligning items to the center */
+    justify-content: center; /* Centering content */
+    margin-right: 50px; /* Setting margin right */
 }
+
 .productImage {
-    max-width: 30vw; 
-    height: auto; 
-    margin: 0 auto; 
+    max-width: 30vw; /* Setting maximum width */
+    height: auto; /* Setting height to auto */
+    margin: 0 auto; /* Setting margin */
 }
+
 /* --------OUR TEAM----------- */
 .TR {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fafafa;
-    margin: 50px;
-    max-width: 100vw;
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
+    align-items: center; /* Aligning items to the center */
+    justify-content: center; /* Centering content */
+    background-color: #fafafa; /* Setting background color */
+    margin: 50px; /* Setting margin */
+    max-width: 100vw; /* Setting maximum width */
 }
 
 .heading3 {
-    margin: 30px 20px;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
-    color: #232121;
+    margin: 30px 20px; /* Setting margin */
+    font-size: 30px; /* Setting font size */
+    font-weight: 900; /* Setting font weight */
+    text-align: center; /* Center aligning text */
+    color: #232121; /* Setting text color */
 }
+
 .teamInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
+    align-items: center; /* Aligning items to the center */
 }
+
 .profileP {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 25%;
+    display: flex; /* Setting display property to flex */
+    justify-content: space-evenly; /* Distributing space evenly */
+    gap: 25%; /* Setting gap */
 }
+
 .profileA, .profileJ, .profileN {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
-    /* gap: 38%; */
-
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
+    align-items: center; /* Aligning items to the center */
 }
+
 #Aaliyah, #Johan, #Nibras {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
-        color: #232121;
-
+    display: flex; /* Setting display property to flex */
+    flex-wrap: wrap; /* Allowing items to wrap */
+    justify-content: center; /* Centering content */
+    align-items: center; /* Aligning items to the center */
+    margin: 20px; /* Setting margin */
+    max-width: 100px; /* Setting maximum width */
+    max-height: 100px; /* Setting maximum height */
+    border-radius: 50%; /* Setting border radius */
+    color: #232121; /* Setting text color */
 }
+
 .Aaliyah, .Johan, .Nibras {
-    text-align: center;
-    color: #232121;
-
+    text-align: center; /* Center aligning text */
+    color: #232121; /* Setting text color */
 }
+
 .profile-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
-    gap: 40px;
+    display: flex; /* Setting display property to flex */
+    flex-direction: row; /* Setting flex direction */
+    flex-wrap: wrap; /* Allowing items to wrap */
+    justify-content: space-between; /* Distributing space between items */
+    align-items: center; /* Aligning items to the center */
+    margin: 30px; /* Setting margin */
+    gap: 40px; /* Setting gap */
 }
 
 .teamMembers, .reviews {
-    border-radius: 10px;
-    color: rgb(35, 33, 33);
-    background-color: #AB9C67;
-    padding: 90px;
-    max-width: 45vw;
-    font-size: 16px;
-    line-height: 25px;
+    border-radius: 10px; /* Setting border radius */
+    color: rgb(35, 33, 33); /* Setting text color */
+    background-color: #AB9C67; /* Setting background color */
+    padding: 90px; /* Setting padding */
+    max-width: 45vw; /* Setting maximum width */
+    font-size: 16px; /* Setting font size */
+    line-height: 25px; /* Setting line height */
 }
 
 .teamReviews {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin:  20px;
-    justify-content: space-evenly;
-    align-items: center;
-    
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
+    gap: 20px; /* Setting gap */
+    margin: 20px; /* Setting margin */
+    justify-content: space-evenly; /* Distributing space evenly */
+    align-items: center; /* Aligning items to the center */
 }
 
 /* --------What People Say----------- */
 .PR {
-    background-color: #AB9C67;
-    max-width: 100vw;
-    padding: 20px 0;
+    background-color: #AB9C67; /* Setting background color */
+    max-width: 100vw; /* Setting maximum width */
+    padding: 20px 0; /* Setting padding */
 }
+
 .heading4 {
-    color: #232121;
-    margin: 30px 20px;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
+    color: #232121; /* Setting text color */
+    margin: 30px 20px; /* Setting margin */
+    font-size: 30px; /* Setting font size */
+    font-weight: 900; /* Setting font weight */
+    text-align: center; /* Center aligning text */
 }
+
 .imageContainer {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    justify-content: space-around;
+    display: flex; /* Setting display property to flex */
+    flex-direction: row; /* Setting flex direction */
+    margin: 20px; /* Setting margin */
+    justify-content: space-around; /* Distributing space around */
 }
+
 .imageContainer img {
-    max-width: 100px;
-    height: 110px;
-    border-radius: 50%;
+    max-width: 100px; /* Setting maximum width */
+    height: 110px; /* Setting height */
+    border-radius: 50%; /* Setting border radius */
 }
+
 .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 15px;
+    display: flex; /* Setting display property to flex */
+    flex-direction: row; /* Setting flex direction */
+    justify-content: space-between; /* Distributing space between items */
+    font-size: 15px; /* Setting font size */
 }
+
 .card-container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    background-color: rgb(35, 33, 33);
-    border-radius: 10px;
-    margin: 25px;
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
+    width: 80%; /* Setting width */
+    background-color: rgb(35, 33, 33); /* Setting background color */
+    border-radius: 10px; /* Setting border radius */
+    margin: 25px; /* Setting margin */
 }
+
 .ethan, .isabella, .rocky {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    display: flex; /* Setting display property to flex */
+    flex-direction: column; /* Setting flex direction */
+    align-items: center; /* Aligning items to the center */
+    padding: 20px; /* Setting padding */
 }
+
 .ethanImage, .isabellaImage, .rockyImage {
-    /*width: 8vw;*/
-    /* height: 16vh; */
-    width: 20%;
-    border-radius: 50%;
+    width: 20%; /* Setting width */
+    border-radius: 50%; /* Setting border radius */
 }
+
 .imageBox {
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
+    display: flex; /* Setting display property to flex */
+    align-items: center; /* Aligning items to the center */
+    justify-content: center; /* Centering content */
+    padding-top: 30px; /* Setting padding top */
 }
+
 .ethanReview, .isabellaReview, .rockyReview {
-    text-align: left;
-    font-weight: 300;
-    color: #AB9C67;
-    font-size: 16px;
-    margin: 35px;
-    line-height: 20px;
-
+    text-align: left; /* Left aligning text */
+    font-weight: 300; /* Setting font weight */
+    color: #AB9C67; /* Setting text color */
+    font-size: 16px; /* Setting font size */
+    margin: 35px; /* Setting margin */
+    line-height: 20px; /* Setting line height */
 }
 
-
-
- @media screen and (max-width:960px){ 
+@media screen and (max-width:960px) {
     /* --------ABOUT US----------- */
     .StoryMission {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Changing flex direction to column */
+        align-items: center; /* Aligning items to the center */
     }
     #story-container, #mission-container {
-        min-width:90vw;
+        min-width: 90vw; /* Setting minimum width */
     }
     #story-container h3, #mission-container h3 {
-        padding-top: 10px;
+        padding-top: 10px; /* Setting padding top */
     }
     .story, .mission {
-        padding: 40px;
+        padding: 40px; /* Setting padding */
     }
     .text1 {
-        margin: 0 40px 25px 40px;
+        margin: 0 80px 25px 80px; /* Setting margin */
     }
     /* --------ABOUT OUR PRODUCT----------- */
     .ProductInfo {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-        padding: 0;
-        margin: 0;
+        flex-direction: column; /* Changing flex direction to column */
+        align-items: center; /* Aligning items to the center */
+        text-align: left; /* Left aligning text */
+        padding: 0; /* Resetting padding */
+        margin: 0; /* Resetting margin */
     }
     .heading2 {
-        text-align: center;
-        padding-bottom: 20px;
-        margin-left: 0;
+        text-align: center; /* Center aligning text */
+        padding-bottom: 20px; /* Setting padding bottom */
+        margin-left: 0; /* Resetting margin left */
     }
     .rangeQuality {
-        padding: 0;
+        padding: 0; /* Resetting padding */
     }
     .range, .quality {
-        margin: 0;
-        padding: 0;
-        text-align: left;
-        
+        margin: 0; /* Resetting margin */
+        padding: 0; /* Resetting padding */
+        text-align: left; /* Left aligning text */
     }
     .center-container {
-        align-items: center;
+        align-items: center; /* Aligning items to the center */
     }
     .productImage {
-        max-width: 60vw;
+        max-width: 60vw; /* Setting maximum width */
     }
-    /* --------OUR Team----------- */
+    /* --------OUR TEAM----------- */
     .TR {
-        justify-content: center;
-        align-items: center;
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning items to the center */
     }
     .teamMembers, .reviews {
-        max-width: 90vw;
-        padding: 40px;
+        max-width: 90vw; /* Setting maximum width */
+        padding: 40px; /* Setting padding */
     }
     .profile-container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        flex-direction: row; /* Setting flex direction */
+        align-items: center; /* Aligning items to the center */
+        justify-content: space-around; /* Distributing space around */
     }
     #Aaliyah, #Johan, #Nibras {
-        text-align: center;
-        align-items: center;
+        text-align: center; /* Center aligning text */
+        align-items: center; /* Aligning items to the center */
     }
     /* --------What People Say----------- */
     .cards {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Changing flex direction to column */
+        align-items: center; /* Aligning items to the center */
     }
     .card-container {
-        max-width: 90vw;
+        max-width: 90vw; /* Setting maximum width */
     }
     .ethanImage, .isabellaImage, .rockyImage {
-        width: 15vw;
-        height: auto;
+        width: 15vw; /* Setting width */
+        height: auto; /* Setting height to auto */
     }
     .ethanReview, .isabellaReview, .rockyReview {
-        line-height: 25px;
-        text-align: left;
+        line-height: 25px; /* Setting line height */
+        text-align: left; /* Left aligning text */
     }
- }
+}
 
-
- 
- @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     /* --------OUR Team----------- */
     .profile-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-
+        flex-direction: column; /* Changing flex direction to column */
+        align-items: center; /* Aligning items to the center */
+        justify-content: space-around; /* Distributing space around */
     }
     #Aaliyah, #Johan, #Nibras {
-        align-items: center;
-        margin: 20px;
+        align-items: center; /* Aligning items to the center */
+        margin: 20px; /* Setting margin */
     }
     .teamMembers, .reviews {
-        min-width: 60vw;
-        padding: 40px;
-        text-align: left;
+        min-width: 60vw; /* Setting minimum width */
+        padding: 40px; /* Setting padding */
+        text-align: left; /* Left aligning text */
     }
     .ethanImage, .isabellaImage, .rockyImage {
-        width: 40vw;
-        height: auto;
+        width: 40vw; /* Setting width */
+        height: auto; /* Setting height to auto */
     }
     /* --------What People Say----------- */
     .card-container {
-        max-width: 90vw;
+        max-width: 90vw; /* Setting maximum width */
     }
- }
-
+}
