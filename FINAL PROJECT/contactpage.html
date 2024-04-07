@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact us page on Telecomm">
+<meta name="keywords" content="contact, us, message, email, address">
+<meta name="keywords" content="for more information">
+<meta name="keywords" content="assistance, help, needed">
 <title>Contact Us</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="contact.css">
@@ -10,41 +14,43 @@
 <script src="header-footer.js" type="text/javascript" defer></script>
 </head>
 <body>
+    <!-- header section -->
     <header class="vintagehead"></header> 
 
     <section>
         <div class="container">
+            <!-- the right container for the contact form -->
              <div class="right-container">
                  <h3>Contact US</h3>
-                 <form action="" class="contactForm" required>
+                 <!-- contact form -->
+                 <!-- this is for the contac anf the onsubmit is to perform the contact.js function -->
+                 <form action="" class="contactForm" onsubmit="contactformcheck()" >
                     <label for="name">Name:</label>
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id="name" placeholder="Your Name" required >
                      <label for="email">Email:</label>
-                        <input type="email" name="" id="" placeholder="Enter your Email" required>
+                        <input type="email"  id="email" placeholder="Enter your Email" required>
                     <label for="message">Message:</label>
-                        <textarea name="" id="" cols="30" rows="6" placeholder="Enter your message"></textarea>
-                    <button type="submit" class="button" onclick="submitForm()">Submit</button>
+                        <textarea  id="message" cols="30" rows="6" placeholder="Enter your message" required></textarea>
+                    <button type="submit" class="button"  >Submit</button>
                     
                  </form>
-                 <div id="errorMessage" class="error" style="display: none;">Please fill in all fields.</div>
              </div>
-            
+            <!-- gor the left container of the map -->
              <div class="left-map" >
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5700.032448243104!2d-79.66910949999996!3d44.4123128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aa3723e3232f1%3A0xe6be031a81155c65!2sGeorgian%20College!5e0!3m2!1sen!2sca!4v1712422002817!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>
         </div>
      </section>  
-
+     <!-- footer section -->
      <footer>
         <div id="vintagefooter"></div>
     </footer>
-
+    <!-- the js for contact for the contactform -->
     <script src="contact.js"></script>
     
 
 </body>
 </html>
-
 
 
 
