@@ -15,11 +15,6 @@ header.innerHTML = `
                 </div>
                 <img class="menu-button" src="photos/menu-line.png" onclick="showMenu()" alt="navbar-menu">
             </nav>
-            <section  class="information">
-              <h1 class="welcome">Welcome to Vintage Landlines!</h1>
-              <p>Experience the Retro Charm of our Rotary Dial telephones as it combines nostalgia with modern functionality. Get ready to dial in style!</p>
-              <a class="learnMore" href="productpage.html">Learn More</a>
-            </section>
 ` ;
 const footerSection = document.getElementById("vintagefooter");
 footerSection.innerHTML = `
@@ -27,7 +22,7 @@ footerSection.innerHTML = `
 
 <footer class="footer-distributed">
 
-      <div class="footer-left">
+      <section class="footer-left">
 
         <h3>Telecomm</h3>
 
@@ -42,9 +37,9 @@ footerSection.innerHTML = `
         </p>
 
         <p class="footer-company-name"></p>
-      </div>
+      </section>
 
-      <div class="footer-center">
+      <section class="footer-center">
 
         <div>
           <i class="fa fa-map-marker"></i>
@@ -53,7 +48,7 @@ footerSection.innerHTML = `
 
         <div>
           <i class="fa fa-phone"></i>
-          <p>+1.123.456.789</p>
+          <p>+1 (123) 456-789</p>
         </div>
 
         <div>
@@ -61,9 +56,9 @@ footerSection.innerHTML = `
           <p><a href="mailto:support@company.com">support@telecomm.com</a></p>
         </div>
 
-      </div>
+      </section>
 
-      <div class="footer-right">
+      <section class="footer-right">
 
         <p class="footer-company-about">
           <span>About the company</span>
@@ -80,7 +75,7 @@ footerSection.innerHTML = `
 
         </div>
 
-      </div>
+      </section>
 
     </footer>
 `;
@@ -93,5 +88,14 @@ const currentYear = new Date().getFullYear();
 
 // Update the content of the element with the current year
 footerCompanyName.textContent = `Telecomm © ${currentYear}`;
+
+var navLinks = document.getElementById("navLinks")
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
 
 

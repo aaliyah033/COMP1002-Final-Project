@@ -44,42 +44,6 @@ nav img {
 nav .close-button, .menu-button  {
     display: none;
 }
-.information {
-    max-width: 100vw;
-    height: auto;
-    color: #fff;
-    box-shadow: 0px  4px 20px -4px rgba(0,0,0,.75);
-    text-align: center;
-    background-color: #201D1E;
-    padding: 50px 20px;
-}
-.information h1 {
-    font-size: 62px;
-    margin-top: 10vh;
-}
-.information p {
-    margin: 10px 0 40px;
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
-}
-.learnMore {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    padding: 12px 34px;
-    font-size: 16px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.learnMore:hover {
-    border: 1px solid #AB9C67;
-    background: #AB9C67;
-    transition: 1s;
-}
 /* -------------- Footer Section --------------- */
 .footer {
     padding: 20px;
@@ -108,6 +72,7 @@ nav .close-button, .menu-button  {
   
   .footer-distributed .footer-left{
     width: 40%;
+    padding-left: 20px;
   }
   
   /* The company logo */
@@ -262,6 +227,11 @@ nav .close-button, .menu-button  {
       margin-bottom: 40px;
       text-align: center;
     }
+    .footer-left {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
   
     .footer-distributed .footer-center i{
       margin-left: 0;
@@ -271,8 +241,6 @@ nav .close-button, .menu-button  {
   }
   
    /* Social Media Buttons */
-  
-  /* Style all font awesome icons */
   
   .fa {
       text-decoration: none;
