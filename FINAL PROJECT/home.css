@@ -1,20 +1,25 @@
 
-* { 
+*{ 
     margin: 0; 
     padding: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+/* -------------- Information Section --------------- */
 .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100vw;
-    height: auto;
+    height: 85vh;
     color: #fff;
     box-shadow: 0px  4px 20px -4px rgba(0,0,0,.75);
     text-align: center;
     background-color: #201D1E;
-    padding: 50px 20px;
+    padding: 0 20px;
+    justify-content: center;
 }
 .information h1 {
-    font-size: 62px;
+    font-size: 50px;
     margin-top: 10vh;
 }
 .information p {
@@ -40,12 +45,11 @@
     background: #AB9C67;
     transition: 1s;
 }
-/*---------------Information--------------*/
+/*---------------Collection Section--------------*/
 .collection {
-    width: 80%;
-    margin: auto;
     text-align: center;
     padding-top: 100px;
+    height: 100vh;
 }
 .collection h1 {
     font-weight: 600;
@@ -56,73 +60,85 @@
     color: #232121;
     font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+    line-height: 25px;
+    padding: 10px 100px;
 }
 .shopNow {
     color: #232121;
     border: 1px solid #232121;
     margin-top: 15px;
 }
+/* -------------- Why Telecomm Section --------------- */
 .row {
     margin-top: 0 5%;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;    
+    align-items: flex-end;
+    width: 100vw; 
 }
-.RetroDial, .key {
+.Telecomm, .key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-basis: 31%;
     background: #AB9C67;
-    border-radius: 10px;
-    margin: 3%;
-    padding: 20px;
     box-sizing: border-box;
-    text-align: justify;
+    text-align: left;
+    height: 100vh;
+    line-height: 25px;
 }
-.RetroDial {
+.Telecomm {
     flex-grow: 2;
+    flex-shrink: 1;
+}
+.Telecomm p {
+    padding: 0 50px;
+}
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30vh 0;
+    flex-shrink: 2;
 }
 .telephonePicture {
     max-width: 31vw;
     height: auto;
 }
+.key {
+    flex-shrink: 2;
+    background: #989473;
+}
 .row h2 {
     text-align: center;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 .ul-style {
     margin-left: 20px;
 }
-.RetroDial:hover, .key:hover {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
-}
 
-.footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 100vw;
-    height: auto;
-    background-color: #8A6C4D;
-    padding: 1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* -------------- Embedded Video Section --------------- */
+.video {
+    text-align: center;
+    min-height: 100vh;
 }
-
-.copyright {
-    color: #F7E7D7;
-    padding: 0.2em 1em;
+.video h1 {
+    font-weight: 600;
+    padding: 60px 0 30px 0;
+    color: #232121;
+    font-size: 36px;
 }
-
-.socials {
-    display: flex;
-    flex-direction: row;
+.working {
+    padding: 50px 100px;
+    font-size: 16px;
+    line-height: 25px;
 }
-
-.facebook, .instagram, .threads, .twitter {
-    padding: 1em 0.5em;
+iframe {
+    width: 800px;
+    height: 450px;
 }
-
 
 
 
@@ -137,31 +153,17 @@
         max-width: 71vw;
         height: auto;
     }
-    /* footer */
-    .footer {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+    .information h1 {
+        font-size: 40px;
+        margin-top: 10vh;
+    }
+    .Telecomm, .key {
         width: 100vw;
-        height: auto;
-        background-color: #8A6C4D;
-        padding: 1em;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 50px;
     }
-    
-    .copyright {
-        color: #F7E7D7;
-        padding: 0.2em 1em;
-    }
-    
-    .socials {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .facebook, .instagram, .threads, .twitter {
-        padding: 1em 0.5em;
+    iframe {
+        width: 280px;
+        height: 158px;
     }
 }
-
 
