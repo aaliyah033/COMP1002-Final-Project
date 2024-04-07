@@ -29,7 +29,7 @@ footerSection.innerHTML = `
 
       <div class="footer-left">
 
-        <h3>Telecomm<span>logo</span></h3>
+        <h3>Telecomm</h3>
 
         <p class="footer-links">
           <a href="homepage.html" class="link-1">Home</a>
