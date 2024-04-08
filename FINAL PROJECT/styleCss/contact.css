@@ -29,7 +29,7 @@
     box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
     border-radius: 0.5rem;
     overflow: hidden;
-    margin: 20px;
+
 }
 
 .right-container{
@@ -96,7 +96,6 @@
     .container {
         grid-template-columns: 1fr;
         gap: 1rem;
-       
     }
     .left-map iframe {
         height: 400px;

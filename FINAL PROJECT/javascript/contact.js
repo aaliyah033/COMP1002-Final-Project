@@ -1,7 +1,6 @@
-
 // Function to check the contact form
 function contactformcheck() {
-   
+
     var name = document.getElementById('name').value; // Gets the value of the name 
     var email = document.getElementById('email').value; // Gets the value of the email 
     var message = document.getElementById('message').value; // Gets the value of the message 

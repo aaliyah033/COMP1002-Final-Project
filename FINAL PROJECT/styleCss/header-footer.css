@@ -1,319 +1,337 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
 /* -------------- Header Section --------------- */
+
+/* Sets maximum height to 60% of the viewport height */
 .header {
     max-height: 60vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    width: 100%; /* Sets width to 100% */
+    background-position: center; /* Centers the background image */
+    background-size: cover; /* Sets background size to cover */
+    position: relative; /* Sets position to relative */
 }
+
+/* Styles for navigation */
 nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #201D1E;
+    display: flex; /* Sets display to flex */
+    padding: 2% 6%; /* Sets padding */
+    justify-content: space-between; /* Aligns items with space between */
+    align-items: center; /* Aligns items to center */
+    background-color: #201D1E; /* Sets background color */
 }
 nav img {
-    width: 150px;
-
+    width: 150px; /* Sets width */
 }
+
 .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-}
-.nav-links ul li::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #AB9C67;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
-}
-.nav-links ul li:hover::after {
-    width: 100%;
-} 
-nav .close-button, .menu-button  {
-    display: none;
-}
-/* -------------- Footer Section --------------- */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
+    list-style: none; /* Removes default list styles */
+    display: inline-block; /* Displays elements inline */
+    padding: 8px 12px; /* Sets padding */
+    position: relative; /* Sets position to relative */
 }
 
-  .footer-distributed{
-    background:#201D1E;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
-    padding: 35px 10px;
-  }
-  
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  /* Footer left */
-  
-  .footer-distributed .footer-left{
-    width: 40%;
-    padding-left: 20px;
-  }
-  
-  /* The company logo */
-  
-   .footer-distributed h3{
-    color:  #ffffff;
-    font: normal 36px 'Open Sans', cursive;
-    margin: 0;
-    font-weight: bold;
-    
-  } 
-  
-  /* Footer links */
-  
-  .footer-distributed .footer-links{
-    color:  #A38657;
-    margin: 20px 0 12px;
-    padding: 0;
-  }
-  
-  .footer-distributed .footer-links a{
-    display:inline-block;
-    line-height: 1.8;
-    font-weight:400;
-    text-decoration: none;
-    color:  inherit;
-  }
-  
-  .footer-distributed .footer-company-name{
-    color:  white;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-  }
-  
-  /* Footer Center */
-  
-  .footer-distributed .footer-center{
-    width: 35%;
-  }
-  
-  .footer-distributed .footer-center i{
-    background-color:  #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
-  }
-  
-  .footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
-  }
-  
-  .footer-distributed .footer-center p{
-    display: inline-block;
-    color:#989473;
-    font-weight:400;
-    vertical-align: middle;
-    margin:0;
-  }
-  
-  .footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
-  }
-  
-  .footer-distributed .footer-center p a{
-    color:#989473;
-    text-decoration: none;;
-  }
-  
-  .footer-distributed .footer-links a:before {
-    content: "|";
-    font-weight:300;
-    font-size: 20px;
-    left: 0;
-    color: #75642E;
-    display: inline-block;
-    padding-right: 5px;
-  }
-  
-  .footer-distributed .footer-links .link-1:before {
-    content: none;
-  }
-  
-  /* Footer Right */
-  
-  .footer-distributed .footer-right{
-    width: 20%;
-  }
-  
-  .footer-distributed .footer-company-about{
-    line-height: 20px;
-    color: #989473;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-  }
-  
-  .footer-distributed .footer-company-about span{
-    display: block;
-    color: whitesmoke;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .footer-distributed .footer-icons{
-    margin-top: 25px;
+.nav-links ul li a {
+    color: #fff; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 13px; /* Sets font size */
+}
+
+.nav-links ul li::after {
+    content: ''; /* Adds content */
+    width: 0; /* Sets width */
+    height: 2px; /* Sets height */
+    background: #AB9C67; /* Sets background color */
+    display: block; /* Displays as block */
+    margin: auto; /* Centers the element */
+    transition: 0.7s; /* Sets transition */
+}
+
+.nav-links ul li:hover::after {
+    width: 100%; /* Sets width to 100% on hover */
+}
+
+.fa {
+    text-decoration: none; /* Removes underline */
+}
+
+nav .fa {
+    display: none; /* Hides the font awesome icons by default */
+    padding: 30px; /* Sets padding */
+}
+
+/* -------------- Footer Section --------------- */
+
+/* Styles for the footer */
+.footer {
+    padding: 20px; /* Sets padding */
+    text-align: center; /* Aligns text to center */
+    background: #ddd; /* Sets background color */
+}
+
+/* Styles for the distributed footer */
+.footer-distributed {
+    background: #201D1E; /* Sets background color */
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); /* Sets box shadow */
+    box-sizing: border-box; /* Sets box sizing */
+    width: 100%; /* Sets width to 100% */
+    text-align: left; /* Aligns text to left */
+    font: bold 16px sans-serif; /* Sets font */
+    padding: 35px 10px; /* Sets padding */
+}
+
+/* Styles for footer distributed sections */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block; /* Displays inline block */
+    vertical-align: top; /* Aligns vertically to top */
+}
+
+/* Styles for footer distributed left section */
+.footer-distributed .footer-left {
+    width: 40%; /* Sets width to 40% */
+    padding-left: 20px; /* Sets left padding */
+}
+
+/* Styles for footer distributed logo */
+.footer-distributed h3 {
+    color: #ffffff; /* Sets text color */
+    font: normal 36px 'Open Sans', cursive; /* Sets font */
+    margin: 0; /* Sets margin */
+    font-weight: bold; /* Sets font weight */
+}
+
+/* Styles for footer distributed links */
+.footer-distributed .footer-links {
+    color: #A38657; /* Sets text color */
+    margin: 20px 0 12px; /* Sets margin */
+    padding: 0; /* Sets padding */
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block; /* Displays inline block */
+    line-height: 1.8; /* Sets line height */
+    font-weight: 400; /* Sets font weight */
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color */
+}
+
+.footer-distributed .footer-company-name {
+    color: white; /* Sets text color */
+    font-size: 14px; /* Sets font size */
+    font-weight: normal; /* Sets font weight */
+    margin: 0; /* Sets margin */
+}
+
+/* Styles for footer distributed center section */
+.footer-distributed .footer-center {
+    width: 35%; /* Sets width to 35% */
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b; /* Sets background color */
+    color: #ffffff; /* Sets text color */
+    font-size: 25px; /* Sets font size */
+    width: 38px; /* Sets width */
+    height: 38px; /* Sets height */
+    border-radius: 50%; /* Sets border radius */
+    text-align: center; /* Aligns text to center */
+    line-height: 42px; /* Sets line height */
+    margin: 10px 15px; /* Sets margin */
+    vertical-align: middle; /* Aligns vertically to middle */
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px; /* Sets font size */
+    line-height: 38px; /* Sets line height */
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block; /* Displays inline block */
+    color: #989473; /* Sets text color */
+    font-weight: 400; /* Sets font weight */
+    vertical-align: middle; /* Aligns vertically to middle */
+    margin: 0; /* Sets margin */
+}
+
+.footer-distributed .footer-center p span {
+    display: block; /* Displays block */
+    font-weight: normal; /* Sets font weight */
+    font-size: 14px; /* Sets font size */
+    line-height: 2; /* Sets line height */
+}
+
+.footer-distributed .footer-center p a {
+    color: #989473; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|"; /* Adds content */
+    font-weight: 300; /* Sets font weight */
+    font-size: 20px; /* Sets font size */
+    left: 0; /* Sets left position */
+    color: #75642E; /* Sets text color */
+    display: inline-block; /* Displays inline block */
+    padding-right: 5px; /* Sets padding */
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none; /* Removes content */
+}
+
+/* Styles for footer distributed right section */
+.footer-distributed .footer-right {
+    width: 20%; /* Sets width to 20% */
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px; /* Sets line height */
+    color: #989473; /* Sets text color */
+    font-size: 13px; /* Sets font size */
+    font-weight: normal; /* Sets font weight */
+    margin: 0; /* Sets margin */
+}
+
+.footer-distributed .footer-company-about span {
+    display: block; /* Displays block */
+    color: whitesmoke; /* Sets text color */
+    font-size: 14px; /* Sets font size */
+    font-weight: bold; /* Sets font weight */
+    margin-bottom: 20px; /* Sets bottom margin */
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px; /* Sets top margin */
     /* margin-top: auto; */
-  
-  }
-  
-  .footer-distributed .footer-icons a{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    /* background-color:  #33383b; */
-    border-radius: 2px;
-  
-    font-size: 20px;
-    color: #989473;
-    text-align: center;
-    line-height: 35px;
-  
-    margin-right: 3px;
-    margin-bottom: 5px;
-  }
-  
-  /* If you don't want the footer to be responsive, remove these media queries */
-  
-  @media (max-width: 880px) {
-  
-    .footer-distributed{
-      font: bold 14px sans-serif;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block; /* Displays inline block */
+    width: 35px; /* Sets width */
+    height: 35px; /* Sets height */
+    cursor: pointer; /* Sets cursor to pointer */
+    border-radius: 2px; /* Sets border radius */
+    font-size: 20px; /* Sets font size */
+    color: #989473; /* Sets text color */
+    text-align: center; /* Aligns text to center */
+    line-height: 35px; /* Sets line height */
+    margin-right: 3px; /* Sets right margin */
+    margin-bottom: 5px; /* Sets bottom margin */
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif; /* Sets font */
     }
-  
+
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
+    .footer-distributed .footer-right {
+        display: block; /* Displays block */
+        width: 100%; /* Sets width to 100% */
+        margin-bottom: 40px; /* Sets bottom margin */
+        text-align: center; /* Aligns text to center */
     }
     .footer-left {
-      padding: 0;
-      margin: 0;
-      text-align: center;
+        padding: 0; /* Resets padding */
+        margin: 0; /* Resets margin */
+        text-align: center; /* Aligns text to center */
     }
-  
-    .footer-distributed .footer-center i{
-      margin-left: 0;
-      justify-content: left;
+
+    .footer-distributed .footer-center i {
+        margin-left: 0; /* Resets left margin */
+        justify-content: left; /* Aligns content to left */
     }
-  
-  }
-  
-   /* Social Media Buttons */
-  
-  .fa {
-      text-decoration: none;
-  }
-  
-  .fa:hover {
-      
-      background-color:#AB9C67;
-  }
-  
-  #fa-facebook {
-      
-      color: white !important;
-  }
-  
-  .fa-twitter {
-      
-      color: white !important;
-  }
-  
-  .fa-linkedin {
-     
-      color: white !important;
-  }
-  
-  .fa-github {
-      
-      color: white !important;
-  }
+}
 
+/* Social Media Buttons */
 
+.fa {
+    text-decoration: none; /* Removes underline */
+}
 
+.fa:hover {
+    background-color: #AB9C67; /* Sets background color on hover */
+}
 
+.fa-bars:hover {
+    background-color: #201D1E; /* Sets background color on hover */
+}
+
+.fa-times:hover {
+    background-color: #AB9C67; /* Sets background color on hover */
+}
+
+.fa-bars {
+    color: white !important; /* Sets text color */
+}
+
+.fa-times {
+    color: white !important; /* Sets text color */
+}
+
+#fa-facebook {
+    color: white !important; /* Sets text color */
+}
+
+.fa-twitter {
+    color: white !important; /* Sets text color */
+}
+
+.fa-linkedin {
+    color: white !important; /* Sets text color */
+}
+
+.fa-github {
+    color: white !important; /* Sets text color */
+}
 
 @media (max-width: 650px) {
     .nav-links ul li {
-        display: block;
+        display: block; /* Displays block */
     }
     .nav-links {
-        position: absolute;
-        background: #AB9C67;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
+        position: absolute; /* Sets position to absolute */
+        background: #AB9C67; /* Sets background color */
+        height: 100vh; /* Sets height to 100% of viewport height */
+        width: 200px; /* Sets width */
+        top: 0; /* Sets top position */
+        right: -200px; /* Sets right position */
+        text-align: left; /* Aligns text to left */
+        z-index: 2; /* Sets z-index */
+        transition: 1s; /* Sets transition */
     }
-    nav .close-button, .menu-button {
-        display: block;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-        max-width: 20px;
-        height: auto;
+    nav .close-button,
+    .menu-button {
+        display: block; /* Displays block */
+        margin: 10px; /* Sets margin */
+        font-size: 22px; /* Sets font size */
+        cursor: pointer; /* Sets cursor to pointer */
+        max-width: 20px; /* Sets max width */
+        height: auto; /* Sets height to auto */
     }
     .nav-links ul {
-        padding: 20px;
+        padding: 20px; /* Sets padding */
     }
-    .menu-button {
-        display: block; 
-        cursor: pointer;
+    nav .fa {
+        display: block; /* Displays block */
     }
-    .close-button {
-        display: none; 
+    .fa-bars {
+        color: white !important; /* Sets text color */
+        display: block; /* Displays block */
+    }
+    .fa-times {
+        color: white !important; /* Sets text color */
     }
     .information p {
-        margin: 10px 40px;
-        font-size: 18px;
-        color: #fff;
+        margin: 10px 40px; /* Sets margin */
+        font-size: 18px; /* Sets font size */
+        color: #fff; /* Sets text color */
     }
     .learnMore {
-        margin-top: 10px;
+        margin-top: 10px; /* Sets top margin */
     }
-} 
+}
