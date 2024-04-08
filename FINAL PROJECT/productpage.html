@@ -6,15 +6,24 @@
     <meta name="description" content="Welcome to Vintage Landlines!">
     <meta name="keywords" content="Old landline telephones">
     <title>Our Products</title>
+    <!-- Links an external CSS file for font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="styleCss/product.css">
     <!-- Link to the header-footer stylesheet -->
     <link href="styleCss/header-footer.css" type="text/css" rel="stylesheet">
+    <!-- Script for header and footer functionality -->
+    <script src="javascript/header-footer.js" type="text/javascript" defer></script>
+    <!-- Link to favicon image --> 
+    <link rel="icon" href="photos/Telecomm.png" type="image/x-icon">
+    <!-- Script for product functionality -->
+    <script src="javascript/product.js"></script>
+
 </head>
 <body>
     <!-- Header section -->
     <header class="vintagehead"></header>
-    
+    <h1 class="ourProducts">Our Products</h1>
     <!-- Main content section -->
     <main class="phone-cards">
         <!-- First phone card -->
@@ -66,15 +75,111 @@
             <!-- Price of the third phone card -->
             <span>$160.99</span>
         </div>
+        <div class="phone-card">
+            <!-- Image for the first phone card with data attribute for image options -->
+            <img src="photos/telephone1.jpg" data-images="photos/telephone1-black.png, photos/telephone1.jpg, photos/telephone1-white (3).png" alt="Gold telephone">
+            <!-- Phone card details -->
+            <h3>Landline 1890</h3>
+            <h4>Redial function</h4>
+            <!-- Color options for the first phone card -->
+            <div class="color-options">
+                <div class="color-option black" onclick="changeImage(this)">Black</div>
+                <div class="color-option gold" onclick="changeImage(this)">Gold</div>
+                <div class="color-option white" onclick="changeImage(this)">White</div>
+            </div>
+            <!-- Price of the first phone card -->
+            <span>$120.99</span>
+        </div>
+        
+        <!-- Second phone card -->
+        <div class="phone-card">
+            <!-- Image for the second phone card with data attribute for image options -->
+            <img src="photos/telephone2-black.jpg" data-images="photos/telephone2-black.jpg, photos/telephone2-gold.jpg, photos/telephone2-blue.png" alt="Black telephone">
+            <!-- Phone card details -->
+            <h3>Landline 1910</h3>
+            <h4>No power required</h4>
+            <!-- Color options for the second phone card -->
+            <div class="color-options">
+                <div class="color-option black" onclick="changeImage(this)">Black</div>
+                <div class="color-option gold" onclick="changeImage(this)">Gold</div>
+                <div class="color-option white" onclick="changeImage(this)">Blue</div>
+            </div>
+            <!-- Price of the second phone card -->
+            <span>$140.99</span>
+        </div>
+        
+        <!-- Third phone card -->
+        <div class="phone-card">
+            <!-- Image for the third phone card with data attribute for image options -->
+            <img src="photos/telephone3-brown.jpg" data-images="photos/telephone3-brown.jpg, photos/telephone3-gold.jpg, photos/telephone3-white.jpg" alt="Wall telephone">
+            <!-- Phone card details -->
+            <h3>Wall telephone</h3>
+            <!-- Color options for the third phone card -->
+            <div class="color-options">
+                <div class="color-option black" onclick="changeImage(this)">Brown</div>
+                <div class="color-option gold" onclick="changeImage(this)">Gold</div>
+                <div class="color-option white" onclick="changeImage(this)">White</div>
+            </div>
+            <!-- Price of the third phone card -->
+            <span>$160.99</span>
+        </div>
+        <div class="phone-card">
+            <!-- Image for the first phone card with data attribute for image options -->
+            <img src="photos/telephone1.jpg" data-images="photos/telephone1-black.png, photos/telephone1.jpg, photos/telephone1-white (3).png" alt="Gold telephone">
+            <!-- Phone card details -->
+            <h3>Landline 1890</h3>
+            <h4>Redial function</h4>
+            <!-- Color options for the first phone card -->
+            <div class="color-options">
+                <div class="color-option black" onclick="changeImage(this)">Black</div>
+                <div class="color-option gold" onclick="changeImage(this)">Gold</div>
+                <div class="color-option white" onclick="changeImage(this)">White</div>
+            </div>
+            <!-- Price of the first phone card -->
+            <span>$120.99</span>
+        </div>
+        
+        <!-- Second phone card -->
+        <div class="phone-card">
+            <!-- Image for the second phone card with data attribute for image options -->
+            <img src="photos/telephone2-black.jpg" data-images="photos/telephone2-black.jpg, photos/telephone2-gold.jpg, photos/telephone2-blue.png" alt="Black telephone">
+            <!-- Phone card details -->
+            <h3>Landline 1910</h3>
+            <h4>No power required</h4>
+            <!-- Color options for the second phone card -->
+            <div class="color-options">
+                <div class="color-option black" onclick="changeImage(this)">Black</div>
+                <div class="color-option gold" onclick="changeImage(this)">Gold</div>
+                <div class="color-option white" onclick="changeImage(this)">Blue</div>
+            </div>
+            <!-- Price of the second phone card -->
+            <span>$140.99</span>
+        </div>
+        
+        <!-- Third phone card -->
+        <div class="phone-card">
+            <!-- Image for the third phone card with data attribute for image options -->
+            <img src="photos/telephone3-brown.jpg" data-images="photos/telephone3-brown.jpg, photos/telephone3-gold.jpg, photos/telephone3-white.jpg" alt="Wall telephone">
+            <!-- Phone card details -->
+            <h3>Wall telephone</h3>
+            <!-- Color options for the third phone card -->
+            <div class="color-options">
+                <div class="color-option black" onclick="changeImage(this)">Brown</div>
+                <div class="color-option gold" onclick="changeImage(this)">Gold</div>
+                <div class="color-option white" onclick="changeImage(this)">White</div>
+            </div>
+            <!-- Price of the third phone card -->
+            <span>$160.99</span>
+        </div>
     </main>
     
     <!-- Footer section -->
-    <footer class="vintagefooter"></footer>
+    <footer id="vintagefooter"></footer>
     
     <!-- Scripts -->
-    <!-- Script for header and footer functionality -->
-    <script src="javascript/header-footer.js"></script>
+    
+    <!-- <script src="javascript/header-footer.js"></script> -->
     <!-- Script for product functionality -->
-    <script src="javascript/product.js"></script>
+    <!-- <script src="javascript/product.js"></script> -->
 </body>
 </html>

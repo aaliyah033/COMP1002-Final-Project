@@ -9,6 +9,10 @@ body {
     min-height: 100vh;
 }
 
+.ourProducts {
+    text-align: center;
+}
+
 main {
     flex: 1; 
     display: flex;
