@@ -26,7 +26,7 @@
     grid-template-columns: repeat(2, 1fr); 
     gap: 1.5rem;
     background: #fafafa;
-    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 8px -4px;
     border-radius: 0.5rem;
     overflow: hidden;
 
