@@ -1,169 +1,221 @@
-
-*{ 
-    margin: 0; 
-    padding: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+/* Global reset */
+*{
+    margin: 0; /* Resets margin to 0 */
+    padding: 0; /* Resets padding to 0 */
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Sets default font family */
 }
-/* -------------- Information Section --------------- */
+
+/* Information Section */
 .information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100vw;
-    height: 85vh;
-    color: #fff;
-    box-shadow: 0px  4px 20px -4px rgba(0,0,0,.75);
-    text-align: center;
-    background-color: #201D1E;
-    padding: 0 20px;
-    justify-content: center;
+    display: flex; /* Sets display to flex */
+    flex-direction: column; /* Sets flex direction to column */
+    align-items: center; /* Aligns items to center */
+    max-width: 100vw; /* Sets maximum width to 100 viewport width */
+    height: 85vh; /* Sets height to 85 viewport height */
+    color: #fff; /* Sets text color to white */
+    box-shadow: 0px  4px 20px -4px rgba(0,0,0,.75); /* Adds box shadow */
+    text-align: center; /* Aligns text to center */
+    background-color: #201D1E; /* Sets background color */
+    padding: 0 20px; /* Sets padding */
+    justify-content: center; /* Aligns content to center */
 }
 .information h1 {
-    font-size: 50px;
-    margin-top: 10vh;
+    font-size: 50px; /* Sets font size */
+    margin-top: 10vh; /* Sets top margin */
 }
 .information p {
-    margin: 10px 0 40px;
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
+    margin: 10px 0 40px; /* Sets margins */
+    text-align: center; /* Aligns text to center */
+    font-size: 18px; /* Sets font size */
+    color: #fff; /* Sets text color to white */
 }
 .learnMore, .shopNow {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    padding: 12px 34px;
-    font-size: 16px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
+    display: inline-block; /* Sets display to inline-block */
+    text-decoration: none; /* Removes default text decoration */
+    color: #fff; /* Sets text color to white */
+    border: 1px solid #fff; /* Sets border */
+    border-radius: 10px; /* Sets border radius */
+    padding: 12px 34px; /* Sets padding */
+    font-size: 16px; /* Sets font size */
+    background: transparent; /* Sets background to transparent */
+    position: relative; /* Sets position */
+    cursor: pointer; /* Sets cursor to pointer */
 }
 .learnMore:hover, .shopNow:hover {
-    border: 1px solid #AB9C67;
-    background: #AB9C67;
-    transition: 1s;
+    border: 1px solid #AB9C67; /* Sets border color on hover */
+    background: #AB9C67; /* Sets background color on hover */
+    transition: 1s; /* Sets transition duration */
 }
-/*---------------Collection Section--------------*/
+
+/* Collection Section */
 .collection {
-    text-align: center;
-    padding-top: 100px;
-    height: 100vh;
+    text-align: center; /* Aligns text to center */
+    padding-top: 100px; /* Sets top padding */
+    height: 50vh; /* Sets height to 50 viewport height */
 }
 .collection h1 {
-    font-weight: 600;
-    color: #232121;
-    font-size: 36px;
+    font-weight: 600; /* Sets font weight */
+    color: #232121; /* Sets text color */
+    font-size: 36px; /* Sets font size */
 }
 .collection p {
-    color: #232121;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 25px;
-    padding: 10px 100px;
+    color: #232121; /* Sets text color */
+    font-size: 18px; /* Sets font size */
+    font-weight: 300; /* Sets font weight */
+    line-height: 25px; /* Sets line height */
+    padding: 10px 100px; /* Sets padding */
 }
 .shopNow {
-    color: #232121;
-    border: 1px solid #232121;
-    margin-top: 15px;
+    color: #232121; /* Sets text color */
+    border: 1px solid #232121; /* Sets border */
+    margin-top: 15px; /* Sets top margin */
 }
-/* -------------- Why Telecomm Section --------------- */
+
+/* Three Product Pictures Section */
+.pictureRow {
+    display: flex; /* Sets display to flex */
+    flex-direction: row; /* Sets flex direction to row */
+    justify-content: space-evenly; /* Aligns items with space between */
+    width: 98vw; /* Sets width to 98 viewport width */
+    height: auto; /* Sets height to auto */
+    flex-wrap: wrap; /* Allows items to wrap */
+    margin-bottom: 50px; /* Sets bottom margin */
+}
+
+/* Styling for product images */
+.antique, .wallMounted, .modern, .modern2 {
+    max-width: 20vw; /* Sets maximum width */
+    height: auto; /* Sets height to auto */
+}
+
+/* Why Telecomm Section */
 .row {
-    margin-top: 0 5%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    width: 100vw; 
+    /* margin-top: 0 5%; */
+    display: flex; /* Sets display to flex */
+    justify-content: space-evenly; /* Aligns items with space between */
+    align-items: flex-end; /* Aligns items to flex end */
+    width: 98vw; /* Sets width to 98 viewport width */
 }
 .Telecomm, .key {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 31%;
-    background: #AB9C67;
-    box-sizing: border-box;
-    text-align: left;
-    height: 100vh;
-    line-height: 25px;
+    display: flex; /* Sets display to flex */
+    flex-direction: column; /* Sets flex direction to column */
+    align-items: center; /* Aligns items to center */
+    justify-content: center; /* Aligns content to center */
+    flex-basis: 31%; /* Sets flex basis */
+    background: #AB9C67; /* Sets background color */
+    box-sizing: border-box; /* Includes padding and border in total width/height */
+    text-align: left; /* Aligns text to left */
+    height: 100vh; /* Sets height to 100 viewport height */
+    line-height: 25px; /* Sets line height */
 }
 .Telecomm {
-    flex-grow: 2;
-    flex-shrink: 1;
+    flex-grow: 2; /* Sets flex grow */
+    flex-shrink: 1; /* Sets flex shrink */
 }
 .Telecomm p {
-    padding: 0 50px;
+    padding: 0 50px; /* Sets padding */
 }
 .picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30vh 0;
-    flex-shrink: 2;
+    display: flex; /* Sets display to flex */
+    flex-direction: column; /* Sets flex direction to column */
+    align-items: center; /* Aligns items to center */
+    /* margin: 30vh 0; */
+    flex-shrink: 2; /* Sets flex shrink */
+    padding-bottom: 15px; /* Sets bottom padding */
 }
 .telephonePicture {
-    max-width: 31vw;
-    height: auto;
+    max-width: 30vw; /* Sets maximum width */
+    height: auto; /* Sets height to auto */
 }
 .key {
-    flex-shrink: 2;
-    background: #989473;
+    flex-shrink: 2; /* Sets flex shrink */
+    background: #989473; /* Sets background color */
 }
 .row h2 {
-    text-align: center;
-    font-weight: 600;
-    margin: 30px 0;
+    text-align: center; /* Aligns text to center */
+    font-weight: 600; /* Sets font weight */
+    margin: 30px 0; /* Sets margins */
 }
 .ul-style {
-    margin-left: 20px;
+    margin-left: 20px; /* Sets left margin */
 }
 
-/* -------------- Embedded Video Section --------------- */
+/* Embedded Video Section */
 .video {
-    text-align: center;
-    min-height: 100vh;
+    text-align: center; /* Aligns text to center */
+    min-height: 100vh; /* Sets minimum height to 100 viewport height */
 }
 .video h1 {
-    font-weight: 600;
-    padding: 60px 0 30px 0;
-    color: #232121;
-    font-size: 36px;
+    font-weight: 600; /* Sets font weight */
+    padding: 60px 0 30px 0; /* Sets padding */
+    color: #232121; /* Sets text color */
+    font-size: 36px; /* Sets font size */
 }
 .working {
-    padding: 50px 100px;
-    font-size: 16px;
-    line-height: 25px;
+    padding: 50px 100px; /* Sets padding */
+    font-size: 16px; /* Sets font size */
+    line-height: 25px; /* Sets line height */
 }
 iframe {
-    width: 800px;
-    height: 450px;
+    width: 800px; /* Sets width */
+    height: 450px; /* Sets height */
 }
 
-
-
-
+/* Media Queries */
 @media (max-width: 960px) {
-    
     .row {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Sets flex direction to column */
+        align-items: center; /* Aligns items to center */
     }
     .telephonePicture {
-        max-width: 71vw;
-        height: auto;
+        max-width: 71vw; /* Sets maximum width */
+        height: auto; /* Sets height to auto */
     }
     .information h1 {
-        font-size: 40px;
-        margin-top: 10vh;
+        font-size: 40px; /* Sets font size */
+        margin-top: 10vh; /* Sets top margin */
+    }
+    .collection {
+        text-align: center; /* Aligns text to center */
+        padding-top: 100px; /* Sets top padding */
+        height: auto; /* Sets height to auto */
+    }
+    .collection-container {
+        display: flex; /* Sets display to flex */
+        flex-direction: column; /* Sets flex direction to column */
+        justify-content: center; /* Aligns content to center */
+    }
+    .shopNow {
+        margin: 2vh 30vw; /* Sets margins */
+        font-weight: bold; /* Sets font weight */
+        font-size: 20px; /* Sets font size */
+    }
+    .pictureRow {
+        flex-direction: column; /* Sets flex direction to column */
+        justify-content: space-evenly; /* Aligns items with space between */
+        align-items: center; /* Aligns items to center */
+        max-width: 100vw; /* Sets maximum width to 100 viewport width */
+        height:  auto; /* Sets height to auto */
+        gap: 10vh; /* Sets gap */
+        margin: 10vh 0; /* Sets margins */
+    }
+    .antique, .wallMounted, .modern, .modern2 {
+        max-width: 80vw; /* Sets maximum width */
+        height: auto; /* Sets height to auto */
     }
     .Telecomm, .key {
-        width: 100vw;
-        padding: 50px;
+        width: 100vw; /* Sets width to 100 viewport width */
+        padding: 50px; /* Sets padding */
     }
     iframe {
-        width: 280px;
-        height: 158px;
+        width: 280px; /* Sets width */
+        height: 158px; /* Sets height */
     }
 }
 
+@media (max-width: 450px) {
+    iframe {
+        width: 200px; /* Sets width */
+        height: 113px; /* Sets height */
+    }
+}

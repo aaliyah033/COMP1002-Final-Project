@@ -1,11 +1,15 @@
+// Selects the header element with the class "vintagehead"
 const header = document.querySelector("header.vintagehead");
+
+// Selects the footer element with the class "vintagefooter"
 const footer = document.querySelector("header.vintagefooter");
 
+// Sets the inner HTML content of the header
 header.innerHTML = `
             <nav class="nav">
                 <a href="homepage.html"><img src="photos/logo-transparent-png.png" alt="Phone Logo"></a>
                 <div class="nav-links" id="navLinks">
-                    <img class="close-button" src="photos/close-line.png" onclick="hideMenu()" alt="hide-navbar">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" alt="hide-navbar"></i> 
                     <ul>
                       <li><a href="homepage.html">HOME</a></li>
                       <li><a href="aboutpage.html">ABOUT</a></li>
@@ -13,10 +17,14 @@ header.innerHTML = `
                       <li><a href="contactpage.html">CONTACT</a></li>
                     </ul>
                 </div>
-                <img class="menu-button" src="photos/menu-line.png" onclick="showMenu()" alt="navbar-menu">
+                <i class="fa fa-bars" aria-hidden="true"onclick="showMenu()" alt="navbar-menu"></i> 
             </nav>
 ` ;
+
+// Selects the footer section element with the ID "vintagefooter"
 const footerSection = document.getElementById("vintagefooter");
+
+// Sets the inner HTML content of the footer section
 footerSection.innerHTML = `
     <!-- Your footer HTML content here -->
 
@@ -68,10 +76,10 @@ footerSection.innerHTML = `
 
         <div class="footer-icons">
 
-          <a href="#" id="fa-facebook" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-github"></a>
+          <a href="https://www.facebook.com/" id="fa-facebook" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+          <a href="https://github.com/" class="fa fa-github"></a>
 
         </div>
 
@@ -89,13 +97,15 @@ const currentYear = new Date().getFullYear();
 // Update the content of the element with the current year
 footerCompanyName.textContent = `Telecomm © ${currentYear}`;
 
-var navLinks = document.getElementById("navLinks")
+// Get the navigation links element
+var navLinks = document.getElementById("navLinks");
 
+// Function to show the navigation menu
 function showMenu() {
     navLinks.style.right = "0";
 }
+
+// Function to hide the navigation menu
 function hideMenu() {
     navLinks.style.right = "-200px";
 }
-
-
