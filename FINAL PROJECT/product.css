@@ -2,7 +2,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Sets default font family */
     margin: 0;
     padding: 0;
     background-color: #fafafa;
