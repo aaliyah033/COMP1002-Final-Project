@@ -1,122 +1,135 @@
-
+/* Set up general styling for the page body */
 body {
     display: flex;
     flex-direction: column;
-    font-family:Georgia, 'Times New Roman', Times, serif; /* Sets default font family */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Sets default font family */
     margin: 0;
     padding: 0;
     background-color: #fafafa;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
 }
 
+/* Styling for a section containing our products */
 .ourProducts {
-    text-align: center;
+    text-align: center; /* Center-align text within this section */
 }
 
+/* Styling for the main content area */
 main {
-    flex: 1; 
+    flex: 1; /* Allows the main content area to grow to fill available space */
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
+    justify-content: space-around; /* Horizontally distribute items */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    padding: 20px; 
 }
 
+/* Additional styling for the main content area when it contains phone cards */
 main.phone-cards {
-    display: flex;  
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 5px;
-    flex-wrap: wrap;
+    display: flex; /* Ensure the phone cards are displayed as flex items */
+    justify-content: space-around; /* Horizontally distribute items */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    padding: 5px; /* Reduce padding around the phone cards */
+    flex-wrap: wrap; /* Allow phone cards to wrap to the next line on smaller screens */
 }
 
+/* Styling for individual phone cards */
 .phone-card {
-    position: relative; 
-    width: 340px;
-    height: 350px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;  
+    position: relative; /* Positioning relative to allow absolute positioning of color options */
+    width: 340px; /* Set a fixed width for the phone cards */
+    height: 350px; /* Set a fixed height for the phone cards */
+    background-color: white; /* Set background color for the phone cards */
+    border-radius: 10px; /* Add rounded corners to the phone cards */
+    padding: 15px; 
+    margin: 20px; 
+    text-align: center; /* Center-align text within the phone cards */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a shadow effect to the phone cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition effects for smooth hover */
 }
 
+/* Scale and enhance shadow on hover for phone cards */
 .phone-card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); /* Scale up the phone card slightly on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover for a lifting effect */
 }
 
+/* Styling for images within phone cards */
 .phone-card img {
-    width: 150px;
+    width: 150px; 
     max-height: 220px;
-    border-radius: 8px;  
-    margin-bottom: 15px;
-    object-fit: cover;
+    border-radius: 8px; /* Add rounded corners to the images */
+    margin-bottom: 15px; /* Add some space below the images */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire space */
 }
 
+/* Styling for order buttons */
 button.order-button {
-    background-color: #8A6C4D;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    margin: 20px;
-    transition: background-color 0.3s;
+    background-color: #8A6C4D; 
+    color: white; 
+    padding: 15px 30px; /* Add padding to the order buttons */
+    font-size: 18px; /* Set font size for the order buttons */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    border: none; /* Remove default button border */
+    border-radius: 5px; 
+    margin: 20px; /* Add margin around the order buttons */
+    transition: background-color 0.3s; /* Add transition effect for smooth hover */
 }
 
+/* Change background color on hover for order buttons */
 button.order-button:hover {
-    background-color: #e74c3c; 
+    background-color: #e74c3c; /* Change background color on hover */
 }
 
+/* Media query for smaller screens */
 @media (max-width: 400px) {
-    main.phone-cards{
-        flex-direction: column;
+    main.phone-cards {
+        flex-direction: column; /* Change direction to column for smaller screens */
     }
 }
 
-/* New styles for color options */
+/* Styling for color options */
 .color-options {
-    display: none;
-    position: absolute;
-    bottom: 10px; 
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hide color options */
+    position: absolute; /* Positioning relative to the parent phone card */
+    bottom: 10px; /* Position at the bottom of the phone card */
+    left: 50%; /* Position in the center horizontally */
+    transform: translateX(-50%); /* Adjust horizontally to center precisely */
+    background-color: white; /* Set background color for color options */
+    padding: 5px; /* Add padding around color options */
+    border-radius: 5px; /* Add rounded corners to color options */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect to color options */
 }
 
+/* Display color options on hover */
 .phone-card:hover .color-options {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* Show color options on hover */
+    justify-content: space-around; /* Horizontally distribute color options */
 }
 
+/* Styling for individual color options */
 .color-option {
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 5px 10px; /* Add padding around color options */
+    border-radius: 5px; /* Add rounded corners to color options */
+    cursor: pointer; /* Set cursor to pointer on hover */
 }
 
+/* Change background color on hover for color options */
 .color-option:hover {
-    background-color: #dddddd;
+    background-color: #dddddd; /* Change background color on hover */
 }
 
+/* Specific color styling */
 .black {
     color: black;
 }
 
 .gold {
-    color: gold;
+    color: gold; 
 }
 
 .white {
-    color: rgba(0, 0, 0, 0.415);
+    color: rgba(0, 0, 0, 0.415); 
 }
 
 .brown {
-    color:#ea87247e
+    color: #ea87247e; 
 }
