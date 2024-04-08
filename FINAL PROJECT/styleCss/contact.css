@@ -43,9 +43,8 @@
 }
 
 /* this is or the telecomm information  */
-.information-center i {
-    background-color:black; 
-    color: hsl(54, 15%, 52%); 
+.information-center i { 
+    color:  #AB9C67; 
     font-size: 35px; 
     width: 40px; 
     height: 40px; 
