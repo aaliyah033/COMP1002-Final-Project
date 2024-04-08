@@ -17,7 +17,7 @@
     color: #AB9C67;
     background: #fafafa;
 }
-/* stykes for the container part */
+/* styles for the container part */
 .container{
     max-width: 960px;
     margin: auto;
@@ -41,9 +41,52 @@
     font-weight: 600;
     margin-bottom: 1rem;
 }
+
+/* this is or the telecomm information  */
+.information-center i {
+    background-color:black; 
+    color: hsl(54, 15%, 52%); 
+    font-size: 35px; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 55%; 
+    text-align: center; 
+    margin: 10px 15px; 
+    vertical-align: middle; 
+}
+
+.information-center i.fa-envelope {
+    font-size: 17px; 
+    line-height: 40px; /*  line height */
+}
+
+.information-center p {
+    display: inline-block; /* Displays inline block */
+    color: black; 
+    vertical-align: middle; /* Aligns vertically to middle */
+    margin: 0; 
+   
+}
+
+ .information-center p span {
+    display: block; /* Displays block */
+    font-size: 17px; 
+   
+}
+
+ .information-center p a {
+    color: black; /* text color */
+    text-decoration: none; 
+    /* Removes underline */
+   
+}
+
+
+/* for the form */
 .contactForm {
    display: grid;
    row-gap: 1rem; 
+   padding: 30px;
 }
 /* for form input field */
 .contactForm input {
@@ -81,8 +124,9 @@
     transition: 0.3s all linear;
 }
 .left-map iframe {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 250px;
+    padding: 10px;
 }
 /* Media query for smallest parts */
 @media (max-width:964px){
