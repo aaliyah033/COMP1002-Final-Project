@@ -3,11 +3,14 @@ Group 06 Members:
 Student#1
 Aaliyah Ally 
 Student# 200480504
+2004805059@student.georgianc.on.ca
 
 Student#2
 Nibras Nibras 
 Student# 200578629
+200578629@student.georgianc.on.ca
 
 Student#3
 Johan Patino
 Student# 200577226
+200577226@student.georgianc.on.ca
