@@ -7,11 +7,11 @@ const footer = document.querySelector("header.vintagefooter");
 // Sets the inner HTML content of the header
 header.innerHTML = `
             <nav class="nav">
-                <a href="homepage.html"><img src="photos/logo-transparent-png.png" alt="Phone Logo"></a>
+                <a href="index.html"><img src="photos/logo-transparent-png.png" alt="Phone Logo"></a>
                 <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" alt="hide-navbar"></i> 
                     <ul>
-                      <li><a href="homepage.html">HOME</a></li>
+                      <li><a href="index.html">HOME</a></li>
                       <li><a href="aboutpage.html">ABOUT</a></li>
                       <li><a href="productpage.html">PRODUCTS</a></li>
                       <li><a href="contactpage.html">CONTACT</a></li>
@@ -31,7 +31,7 @@ footerSection.innerHTML = `
       <section class="footer-left">
         <h3>Telecomm</h3>
         <p class="footer-links">
-          <a href="homepage.html" class="link-1">Home</a>
+          <a href="index.html" class="link-1">Home</a>
         
           <a href="productpage.html">Pricing</a>
         
